@@ -3,7 +3,7 @@ using UnityEngine;
 public class PauseMenu : MonoBehaviour
 {
 
-    public GameObject pauseMenu;
+    public GameObject pauseMenu, phase1, phase2, phase2Credits, phase2Controls;
 
     void Update()
     {
@@ -13,14 +13,16 @@ public class PauseMenu : MonoBehaviour
             {
                 pauseMenu.SetActive(true);
                 Time.timeScale = 0;
-                Debug.Log("P");
             }
         }
         else if (Input.GetKeyDown(KeyCode.Escape))
         {
             pauseMenu.SetActive(false);
             Time.timeScale = 1;
-            Debug.Log("NP");
+            phase1.SetActive(true);
+            phase2.SetActive(false);
+            phase2Credits.SetActive(false);
+            phase2Controls.SetActive(false);
         }
     }
 
@@ -28,6 +30,9 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
-        Debug.Log("NP");
+        phase1.SetActive(true);
+        phase2.SetActive(false);
+        phase2Credits.SetActive(false);
+        phase2Controls.SetActive(false);
     }
 }
