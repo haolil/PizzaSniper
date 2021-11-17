@@ -3375,3 +3375,67 @@ Received Import Request.
 Start importing Assets/BulletTime/TimeController.prefab using Guid(b37013686e8e25c46914f7132e262f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec7837e1062e429cd0cfb231c5e0fb8a') in 0.027938 seconds
   Import took 0.031470 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 1629.422939 seconds.
+  path: Assets/UI/Scopes
+  artifactKey: Guid(75b149d599d54c849ab80f57dc5920e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Scopes using Guid(75b149d599d54c849ab80f57dc5920e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eda186100f869da0f3b0b6a7b4bde21b') in 0.005773 seconds
+  Import took 0.008941 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.271500 seconds.
+  path: Assets/UI/Scopes/Scope.png
+  artifactKey: Guid(523a109602eea22468311fb5b261b681) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Scopes/Scope.png using Guid(523a109602eea22468311fb5b261b681) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b91f6bd63ca2fda13bd3704d30a62cbc') in 0.030314 seconds
+  Import took 0.033815 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/UI/Scopes/ScopeGreenDot.png
+  artifactKey: Guid(88e27dff9cc180a4a91b465b310a0386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Scopes/ScopeGreenDot.png using Guid(88e27dff9cc180a4a91b465b310a0386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '696c2bbfd037ec9e3b5000fc66e0f6f3') in 0.009171 seconds
+  Import took 0.011711 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/UI/Scopes/ScopeRedCenter.png
+  artifactKey: Guid(ade5a7250f5915a4b936e948ed0ad271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Scopes/ScopeRedCenter.png using Guid(ade5a7250f5915a4b936e948ed0ad271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4638a9134afca7c75c2da1798cfff732') in 0.007939 seconds
+  Import took 0.010236 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 223.763812 seconds.
+  path: Assets/UI/Scopes/ScopeCenterDot.png
+  artifactKey: Guid(aba5b93e61b7c3e47b2be0dbca795197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Scopes/ScopeCenterDot.png using Guid(aba5b93e61b7c3e47b2be0dbca795197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '384951f1040c2ffaca7c931538eb4dae') in 0.011638 seconds
+  Import took 0.015192 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/UI/Scopes/ScopeCenterDot.png
+  artifactKey: Guid(aba5b93e61b7c3e47b2be0dbca795197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Scopes/ScopeCenterDot.png using Guid(aba5b93e61b7c3e47b2be0dbca795197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '384951f1040c2ffaca7c931538eb4dae') in 0.010317 seconds
+  Import took 0.013197 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4853.263246 seconds.
+  path: Assets/UI/Scopes/ScopeRed (2).png
+  artifactKey: Guid(59141941f8c8bd249a990fd7d8c60930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Scopes/ScopeRed (2).png using Guid(59141941f8c8bd249a990fd7d8c60930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8c03e9f6ca7e2e944351f9691ceecce') in 0.019449 seconds
+  Import took 0.023057 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.143165 seconds.
+  path: Assets/UI/Scopes/ScopeRed.png
+  artifactKey: Guid(59141941f8c8bd249a990fd7d8c60930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Scopes/ScopeRed.png using Guid(59141941f8c8bd249a990fd7d8c60930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a60ac7c16df1c8c2413816b1367622d9') in 0.018290 seconds
+  Import took 0.021290 seconds .
+
