@@ -3744,3 +3744,309 @@ System memory in use after: 97.4 MB.
 Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3014.
 Total: 2.286500 ms (FindLiveObjects: 0.260000 ms CreateObjectMapping: 0.078000 ms MarkObjects: 1.933000 ms  DeleteObjects: 0.014700 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 66369.454730 seconds.
+  path: Assets/UI/Sprites/Guns
+  artifactKey: Guid(b5721833e23ba2347899a21f133594ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Sprites/Guns using Guid(b5721833e23ba2347899a21f133594ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8fde9764ea3bcd166caa58daf0b5b34') in 0.049375 seconds
+  Import took 0.106284 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.222257 seconds.
+  path: Assets/UI/Sprites/Guns/L115A3_Albedo.png
+  artifactKey: Guid(4f83d987622f1434a90b7878c209ca1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Sprites/Guns/L115A3_Albedo.png using Guid(4f83d987622f1434a90b7878c209ca1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95bbdbb32daba8684a3f923512c59e1a') in 0.097592 seconds
+  Import took 0.100773 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/UI/Sprites/Guns/SVD_Albedo.png
+  artifactKey: Guid(ab3353398662a6942bff996a0084f02c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Sprites/Guns/SVD_Albedo.png using Guid(ab3353398662a6942bff996a0084f02c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f705dee8abcbad7b97c733bd9e284148') in 0.015611 seconds
+  Import took 0.018412 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000136 seconds.
+  path: Assets/UI/Sprites/Guns/SVD_Pixel.png
+  artifactKey: Guid(83a29d7c6eb113a4483063950d31d0a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Sprites/Guns/SVD_Pixel.png using Guid(83a29d7c6eb113a4483063950d31d0a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91e6590df4e7cd8c64faf30540ab4128') in 0.044978 seconds
+  Import took 0.048100 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/UI/Sprites/Guns/M40A5_Black.png
+  artifactKey: Guid(4ad619a4b24ce704c8de180b776df24c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Sprites/Guns/M40A5_Black.png using Guid(4ad619a4b24ce704c8de180b776df24c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e634c64054684374b622d56fa2c538bd') in 0.012004 seconds
+  Import took 0.014675 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/UI/Sprites/Guns/M2010_Pixel.png
+  artifactKey: Guid(73535dd808657b84db6ef377a8c9c161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Sprites/Guns/M2010_Pixel.png using Guid(73535dd808657b84db6ef377a8c9c161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '249424a4671ecfcabb72802cb5f9dcde') in 0.014004 seconds
+  Import took 0.016770 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/UI/Sprites/Guns/L115A3_Black.png
+  artifactKey: Guid(e805b216e82ef704097d9a801f09f915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Sprites/Guns/L115A3_Black.png using Guid(e805b216e82ef704097d9a801f09f915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28ccd712775d9dfb7b5f8d9281543547') in 0.009983 seconds
+  Import took 0.012607 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/UI/Sprites/Guns/M99_Pixel.png
+  artifactKey: Guid(e11e722059f308e45ae14d50dd791aee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Sprites/Guns/M99_Pixel.png using Guid(e11e722059f308e45ae14d50dd791aee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24d72a5867b134684a203753f8850fb4') in 0.012418 seconds
+  Import took 0.015352 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/UI/Sprites/Guns/M2010_Albedo.png
+  artifactKey: Guid(d6180855b84f4af448f1747b93727bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Sprites/Guns/M2010_Albedo.png using Guid(d6180855b84f4af448f1747b93727bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd60656c81a89ae866560523e8529f5a') in 0.014186 seconds
+  Import took 0.016941 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/UI/Sprites/Guns/SOCOM_Albedo.png
+  artifactKey: Guid(4d7289eebd4726c46b6fde4a35ecc369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Sprites/Guns/SOCOM_Albedo.png using Guid(4d7289eebd4726c46b6fde4a35ecc369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6816a27c0644a4429ed7769d341bb782') in 0.014283 seconds
+  Import took 0.016670 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000136 seconds.
+  path: Assets/UI/Sprites/Guns/M40A5_Albedo.png
+  artifactKey: Guid(3c9e25c5cfbe9c445a510f15fe40ca22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Sprites/Guns/M40A5_Albedo.png using Guid(3c9e25c5cfbe9c445a510f15fe40ca22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f4596c696ee320113b36dc016797fbe') in 0.012632 seconds
+  Import took 0.015449 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/UI/Sprites/Guns/SOCOM_Pixel.png
+  artifactKey: Guid(a491893a2b3b9eb4fbe1b781eddcab45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Sprites/Guns/SOCOM_Pixel.png using Guid(a491893a2b3b9eb4fbe1b781eddcab45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f26048a56d0352e98e893bfa640dd777') in 0.016989 seconds
+  Import took 0.020031 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/UI/Sprites/Guns/SOCOM_Black.png
+  artifactKey: Guid(789c188a9e13f7241a25f48ff968d465) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Sprites/Guns/SOCOM_Black.png using Guid(789c188a9e13f7241a25f48ff968d465) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ce73c6252d1b11046d70c0105ffc0ed') in 0.008977 seconds
+  Import took 0.011675 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/UI/Sprites/Guns/M40A5_Pixel.png
+  artifactKey: Guid(e927bfe7005e7eb4289f851dccb9c89a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Sprites/Guns/M40A5_Pixel.png using Guid(e927bfe7005e7eb4289f851dccb9c89a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17d19f9fc767ee58f89ce3a20052d8af') in 0.017131 seconds
+  Import took 0.019706 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/UI/Sprites/Guns/M99_Albedo.png
+  artifactKey: Guid(51ead2f7c4aca624eb24553381917d5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Sprites/Guns/M99_Albedo.png using Guid(51ead2f7c4aca624eb24553381917d5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f780b3278707105ae50dd3cf697762c9') in 0.010255 seconds
+  Import took 0.012954 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/UI/Sprites/Guns/L115A3_Pixel.png
+  artifactKey: Guid(30903ac5face86b4f85682045d074e9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Sprites/Guns/L115A3_Pixel.png using Guid(30903ac5face86b4f85682045d074e9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3792880beb300529409914796cbddace') in 0.016677 seconds
+  Import took 0.019430 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/UI/Sprites/Guns/M99_Black.png
+  artifactKey: Guid(3ec477333d9daba4ab2f28481e6da481) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Sprites/Guns/M99_Black.png using Guid(3ec477333d9daba4ab2f28481e6da481) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3df1f33528182a37777ceb7c95c8439') in 0.011328 seconds
+  Import took 0.013960 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/UI/Sprites/Guns/M2010_Black.png
+  artifactKey: Guid(3d855aaca5d826d4da047077defaedad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Sprites/Guns/M2010_Black.png using Guid(3d855aaca5d826d4da047077defaedad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d9beb2ecd5b2d6f3d6551891586d16') in 0.012370 seconds
+  Import took 0.015275 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/UI/Sprites/Guns/SVD_Black.png
+  artifactKey: Guid(898f559c135370442aa86b90acbadcd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Sprites/Guns/SVD_Black.png using Guid(898f559c135370442aa86b90acbadcd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81629aeb56908aec9d05c6fb7888d73c') in 0.011119 seconds
+  Import took 0.013968 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.110484 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.828 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2077 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.2 MB.
+System memory in use after: 97.5 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3020.
+Total: 2.705300 ms (FindLiveObjects: 0.269800 ms CreateObjectMapping: 0.077900 ms MarkObjects: 2.321200 ms  DeleteObjects: 0.035400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003372 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.666 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2077 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.2 MB.
+System memory in use after: 97.5 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3024.
+Total: 2.373300 ms (FindLiveObjects: 0.268100 ms CreateObjectMapping: 0.080700 ms MarkObjects: 2.009100 ms  DeleteObjects: 0.014500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 279.998559 seconds.
+  path: Assets/UI/Sprites/Guns/GunController.cs
+  artifactKey: Guid(ce11bf678364a0246af8e13fb667df4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Sprites/Guns/GunController.cs using Guid(ce11bf678364a0246af8e13fb667df4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebd979da778db0308eb59dafe616931b') in 0.008518 seconds
+  Import took 0.011678 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003293 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.646 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2077 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.2 MB.
+System memory in use after: 97.5 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3028.
+Total: 2.516000 ms (FindLiveObjects: 0.277300 ms CreateObjectMapping: 0.127500 ms MarkObjects: 2.092800 ms  DeleteObjects: 0.017600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 300.815075 seconds.
+  path: Assets/UI/CanvasPrefabs/UIResultGunDisplay.cs
+  artifactKey: Guid(985ae580f9f5ae141b33625a8828a375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/CanvasPrefabs/UIResultGunDisplay.cs using Guid(985ae580f9f5ae141b33625a8828a375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fbf19941fababe0ab2d03c29ec1b746') in 0.008526 seconds
+  Import took 0.012084 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002890 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.682 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2078 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.3 MB.
+System memory in use after: 97.5 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3033.
+Total: 2.049200 ms (FindLiveObjects: 0.248700 ms CreateObjectMapping: 0.052800 ms MarkObjects: 1.732900 ms  DeleteObjects: 0.014000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003036 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.643 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2078 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.3 MB.
+System memory in use after: 97.5 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3037.
+Total: 2.259000 ms (FindLiveObjects: 0.300000 ms CreateObjectMapping: 0.086100 ms MarkObjects: 1.855100 ms  DeleteObjects: 0.016900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003131 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.657 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2078 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.3 MB.
+System memory in use after: 97.5 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3041.
+Total: 2.078400 ms (FindLiveObjects: 0.243400 ms CreateObjectMapping: 0.054600 ms MarkObjects: 1.765500 ms  DeleteObjects: 0.014100 ms)
+
