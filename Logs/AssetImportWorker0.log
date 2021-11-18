@@ -3689,3 +3689,58 @@ Received Import Request.
 Start importing Assets/UI/Sprites/PineBacking.png using Guid(c4218761cfd74b749a632e8aeb7b6939) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bbd4068be1e94cdc022d8589741708e') in 0.043854 seconds
   Import took 0.047743 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 2121.559031 seconds.
+  path: Assets/UI/Sprites/Backing.png
+  artifactKey: Guid(ab93887d9b4c5874193553ea60fc322a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Sprites/Backing.png using Guid(ab93887d9b4c5874193553ea60fc322a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ceec7e4c2795cb851be32f560358e01') in 0.012461 seconds
+  Import took 0.016081 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3304.325984 seconds.
+  path: Assets/UI/Sprites/BackingFillCut.png
+  artifactKey: Guid(3c6b4ea5c91c7444fb208cc274781529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Sprites/BackingFillCut.png using Guid(3c6b4ea5c91c7444fb208cc274781529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff1733047363b37e3d64e0b4cb1b3a6a') in 0.013871 seconds
+  Import took 0.017342 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3273.858053 seconds.
+  path: Assets/UI/Sprites/BackingFill (1).png
+  artifactKey: Guid(e12ba7cc262b99c4d90ab4ce5a47d690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Sprites/BackingFill (1).png using Guid(e12ba7cc262b99c4d90ab4ce5a47d690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33950d4b8103328e5c9602ddd9892999') in 0.012891 seconds
+  Import took 0.016294 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.688217 seconds.
+  path: Assets/UI/Sprites/BackingFill.png
+  artifactKey: Guid(e12ba7cc262b99c4d90ab4ce5a47d690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Sprites/BackingFill.png using Guid(e12ba7cc262b99c4d90ab4ce5a47d690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17c5c96513170492c4443071d52564ab') in 0.022791 seconds
+  Import took 0.026409 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003278 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.661 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2076 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.2 MB.
+System memory in use after: 97.4 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3014.
+Total: 2.286500 ms (FindLiveObjects: 0.260000 ms CreateObjectMapping: 0.078000 ms MarkObjects: 1.933000 ms  DeleteObjects: 0.014700 ms)
+
