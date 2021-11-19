@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +12,7 @@ public class AudioManager : MonoBehaviour
     private float backgroughFloat, soundEffectsFloat;
     public AudioSource backgroundAudio;
     public AudioSource[] soundEffectsAudio;
+    
     void Awake()
     {
         ContinueSettings();
@@ -74,5 +76,21 @@ public class AudioManager : MonoBehaviour
         {
             soundEffectsAudio[i].volume = soundEffectsFloat;
         }
+    }
+
+    public void SlowSound()
+    {
+        for (int i = 0; i < soundEffectsAudio.Length; i++)
+        {
+            soundEffectsAudio[i].volume = 0;
+        }
+        backgroundAudio.volume = 0;
+        StartCoroutine(pauseTime());
+    }
+    
+    IEnumerator pauseTime()
+    {
+        yield return new WaitForSecondsRealtime(3.7f);
+        ContinueSettings();
     }
 }

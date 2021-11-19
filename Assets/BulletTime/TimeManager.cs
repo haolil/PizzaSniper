@@ -6,6 +6,15 @@ public class TimeManager : MonoBehaviour
     public float slowdownFactor = 0.05f;
     public float slowdownLength = 2f;
     bool canSlow, resetTime;
+    public AudioClip start, stop;
+    AudioSource audioSource;
+    AudioManager audioManager;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+        audioManager = FindObjectOfType<AudioManager>();
+    }
 
     private void Update()
     {
@@ -34,6 +43,9 @@ public class TimeManager : MonoBehaviour
             resetTime = false;
             Time.timeScale = slowdownFactor;
             Time.fixedDeltaTime = Time.timeScale * 0.02f;
+            audioManager.SlowSound();
+            audioSource.pitch = 1;
+            audioSource.PlayOneShot(start);
             StartCoroutine(PauseTime());
         }
     }
@@ -42,5 +54,11 @@ public class TimeManager : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(2f);
         resetTime = true;
+        audioSource.pitch = -0.4f;
+        audioSource.loop = true;
+        audioSource.clip = stop;
+        audioSource.Play();
+        yield return new WaitForSecondsRealtime(0.5f);
+        audioSource.loop = false;
     }
 }
