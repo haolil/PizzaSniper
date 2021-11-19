@@ -4050,3 +4050,151 @@ System memory in use after: 97.5 MB.
 Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3041.
 Total: 2.078400 ms (FindLiveObjects: 0.243400 ms CreateObjectMapping: 0.054600 ms MarkObjects: 1.765500 ms  DeleteObjects: 0.014100 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 4547.242574 seconds.
+  path: Assets/UI/Sprites/Guns/GunController.cs
+  artifactKey: Guid(ce11bf678364a0246af8e13fb667df4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Sprites/Guns/GunController.cs using Guid(ce11bf678364a0246af8e13fb667df4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac9dcc144c65f2136c63bcf02475f7bd') in 0.009827 seconds
+  Import took 0.013570 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.095135 seconds.
+  path: Assets/UI/CanvasPrefabs/UIResultGunDisplay.cs
+  artifactKey: Guid(985ae580f9f5ae141b33625a8828a375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/CanvasPrefabs/UIResultGunDisplay.cs using Guid(985ae580f9f5ae141b33625a8828a375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6f667db291572ccb38b2ea3c5433518') in 0.002104 seconds
+  Import took 0.005144 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003021 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.662 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2078 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.3 MB.
+System memory in use after: 97.5 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3045.
+Total: 2.542500 ms (FindLiveObjects: 0.272500 ms CreateObjectMapping: 0.091100 ms MarkObjects: 2.162500 ms  DeleteObjects: 0.015500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003437 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.653 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2078 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.3 MB.
+System memory in use after: 97.5 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3049.
+Total: 2.293000 ms (FindLiveObjects: 0.267600 ms CreateObjectMapping: 0.078100 ms MarkObjects: 1.929100 ms  DeleteObjects: 0.017500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 523.398679 seconds.
+  path: Assets/UI/CanvasPrefabs/Canvas_Results.prefab
+  artifactKey: Guid(06e2282180cd4044e869551fcdd8129c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/CanvasPrefabs/Canvas_Results.prefab using Guid(06e2282180cd4044e869551fcdd8129c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1073b5cff45f0206ea32698892cc86a3') in 0.036100 seconds
+  Import took 0.040075 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1683.912766 seconds.
+  path: Assets/Scoring
+  artifactKey: Guid(355d2027203d01a4f9a28c216bcc7fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scoring using Guid(355d2027203d01a4f9a28c216bcc7fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74e8615d3c2a12e517be65a76f223868') in 0.005223 seconds
+  Import took 0.008568 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Scoring
+  artifactKey: Guid(355d2027203d01a4f9a28c216bcc7fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scoring using Guid(355d2027203d01a4f9a28c216bcc7fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74e8615d3c2a12e517be65a76f223868') in 0.001622 seconds
+  Import took 0.003687 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.028181 seconds.
+  path: Assets/Scoring/ScoreTracking.cs
+  artifactKey: Guid(51f2c7e3896d43c429186b688509238b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scoring/ScoreTracking.cs using Guid(51f2c7e3896d43c429186b688509238b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57b0288ee0f265e080ccf446c1800361') in 0.005312 seconds
+  Import took 0.008358 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003262 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.656 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2079 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.3 MB.
+System memory in use after: 97.6 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3054.
+Total: 2.418700 ms (FindLiveObjects: 0.260200 ms CreateObjectMapping: 0.092300 ms MarkObjects: 2.050900 ms  DeleteObjects: 0.014600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2271.126021 seconds.
+  path: Assets/UI/CanvasPrefabs/Canvas_Results.prefab
+  artifactKey: Guid(06e2282180cd4044e869551fcdd8129c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/CanvasPrefabs/Canvas_Results.prefab using Guid(06e2282180cd4044e869551fcdd8129c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8cfd511ae7be5cd1b8eb90c1e480b22') in 0.024765 seconds
+  Import took 0.028449 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003255 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.639 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2079 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.4 MB.
+System memory in use after: 97.6 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3058.
+Total: 2.817200 ms (FindLiveObjects: 0.328000 ms CreateObjectMapping: 0.121800 ms MarkObjects: 2.348500 ms  DeleteObjects: 0.018100 ms)
+
