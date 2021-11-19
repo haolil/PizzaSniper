@@ -10,12 +10,16 @@ public class ScoreTracking : MonoBehaviour
     public float total;
     public float accuracy = 100;
     public Text accuracyValue, killValue, timeValue, rankValue;
-    GameObject[] pineapplesTotalAtStart = new GameObject[0];
-    public int pineapplesTotalAtEnd = 0;
+    GameObject[] pineapplesInScene = new GameObject[0];
+    public float pineappleTotalAtStart = 0;
+    public float pineapplesTotalAtEnd = 0;
+    public float totalKills;
+    public float rankPercentage;
 
     void Start()
     {
-        //pineapplesTotalAtStart = //get total enemies based on AI set up array
+        pineappleTotalAtStart = pineapplesInScene.Length;
+        pineapplesTotalAtEnd = pineappleTotalAtStart;
     }
 
     void Update()
@@ -23,13 +27,14 @@ public class ScoreTracking : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.A))
         {
             hit++;
-            //kill
+            pineapplesTotalAtEnd--;
+            Debug.Log("kill");
         }
 
         if (Input.GetKeyDown(KeyCode.D))
         {
             miss++;
-            //miss
+            Debug.Log("miss");
         }
 
         //final
@@ -38,6 +43,11 @@ public class ScoreTracking : MonoBehaviour
             CalculateAccuracy();
             CalculateKills();
             accuracyValue.text = accuracy.ToString() + "%";
+        }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            CalculateRank();
         }
     }
 
@@ -53,7 +63,7 @@ public class ScoreTracking : MonoBehaviour
     public void CalculateKills()
     {
         //pineapplesTotalAtEnd = //get total enemies based on AI set up array at the end of timer
-        killValue.text = pineapplesTotalAtEnd.ToString() + "/" + pineapplesTotalAtStart.Length.ToString();
+        killValue.text = pineapplesTotalAtEnd.ToString() + "/" + pineappleTotalAtStart.ToString();
     }
 
     public void CalculateTime()
@@ -63,15 +73,45 @@ public class ScoreTracking : MonoBehaviour
 
     public void CalculateRank()
     {
-        /*if (pineapplesTotalAtEnd == pineapplesTotalAtStart.Length && accuracy == 100)
-        {
+        totalKills = pineappleTotalAtStart - pineapplesTotalAtEnd;
+        rankPercentage = (totalKills/ pineappleTotalAtStart) * 100;
+        rankPercentage = Mathf.Clamp(rankPercentage, 0, 100);
+        rankPercentage = Mathf.Round(rankPercentage);
+        Debug.Log(rankPercentage);
+        Debug.Log(accuracy);
+        float finalTotal = (rankPercentage + accuracy) * 0.5f;
 
-            rankValue.text = "A";
-        }*/
-        float rankPercentage = accuracy / (pineapplesTotalAtEnd - pineapplesTotalAtStart.Length);
-        switch (rankPercentage)
+        Debug.Log("Grade Percentage = " + finalTotal); 
+        finalTotal = Mathf.Clamp(finalTotal, 0, 100);
+        finalTotal = Mathf.Round(finalTotal);
+
+        
+
+        switch (finalTotal)
         {
-            default:
+            case float n when n >= 100:
+                Debug.Log("SSS");
+                rankValue.text = "SSS";
+                break;
+            case float n when n >= 90:
+                Debug.Log("S");
+                rankValue.text = "S";
+                break;
+            case float n when n >= 70:
+                Debug.Log("A");
+                rankValue.text = "A";
+                break;
+            case float n when n >= 50:
+                Debug.Log("B");
+                rankValue.text = "B";
+                break;
+            case float n when n >= 20:
+                Debug.Log("C");
+                rankValue.text = "C";
+                break;
+            case float n when n >= 0:
+                Debug.Log("D");
+                rankValue.text = "D";
                 break;
         }
     }
