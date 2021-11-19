@@ -11,7 +11,7 @@ public class ScoreTracking : MonoBehaviour
     public float accuracy = 100;
     public Text accuracyValue, killValue, timeValue, rankValue;
     GameObject[] pineapplesTotalAtStart = new GameObject[0];
-    GameObject[] pineapplesTotalAtEnd = new GameObject[0];
+    public int pineapplesTotalAtEnd = 0;
 
     void Start()
     {
@@ -53,7 +53,7 @@ public class ScoreTracking : MonoBehaviour
     public void CalculateKills()
     {
         //pineapplesTotalAtEnd = //get total enemies based on AI set up array at the end of timer
-        killValue.text = pineapplesTotalAtEnd.Length.ToString() + "/" + pineapplesTotalAtStart.Length.ToString();
+        killValue.text = pineapplesTotalAtEnd.ToString() + "/" + pineapplesTotalAtStart.Length.ToString();
     }
 
     public void CalculateTime()
@@ -63,10 +63,15 @@ public class ScoreTracking : MonoBehaviour
 
     public void CalculateRank()
     {
-        int unknownValue = 1;
-        switch (unknownValue)
+        /*if (pineapplesTotalAtEnd == pineapplesTotalAtStart.Length && accuracy == 100)
         {
-            case 0: rankValue.text = "D";
+
+            rankValue.text = "A";
+        }*/
+        float rankPercentage = accuracy / (pineapplesTotalAtEnd - pineapplesTotalAtStart.Length);
+        switch (rankPercentage)
+        {
+            default:
                 break;
         }
     }
