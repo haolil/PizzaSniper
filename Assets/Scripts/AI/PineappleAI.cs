@@ -54,7 +54,7 @@ public class PineappleAI : MonoBehaviour
             }
             else
             {
-                StartCoroutine("WalkState", Random.Range(2,5));
+                StartCoroutine("WalkState", Random.Range(2,4));
             }
         }
         else
