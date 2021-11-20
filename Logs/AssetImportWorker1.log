@@ -2571,3 +2571,26 @@ System memory in use after: 99.6 MB.
 Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3007.
 Total: 2.190900 ms (FindLiveObjects: 0.229400 ms CreateObjectMapping: 0.077400 ms MarkObjects: 1.869900 ms  DeleteObjects: 0.013700 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002959 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.635 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2079 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 99.4 MB.
+System memory in use after: 99.6 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3011.
+Total: 2.264300 ms (FindLiveObjects: 0.259400 ms CreateObjectMapping: 0.075100 ms MarkObjects: 1.913000 ms  DeleteObjects: 0.015900 ms)
+
