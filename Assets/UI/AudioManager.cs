@@ -9,7 +9,7 @@ public class AudioManager : MonoBehaviour
     private static readonly string soundEffectPref = "soundEffectPref";
     private int firstPlayInt;
     public Slider backgroundSlider, soundEffectsSlider;
-    private float backgroughFloat, soundEffectsFloat;
+    private float backgroundFloat, soundEffectsFloat;
     public AudioSource backgroundAudio;
     public AudioSource[] soundEffectsAudio;
     
@@ -24,18 +24,18 @@ public class AudioManager : MonoBehaviour
 
         if (firstPlayInt == 0)
         {
-            backgroughFloat = 0.25f;
+            backgroundFloat = 0.25f;
             soundEffectsFloat = 0.25f;
-            backgroundSlider.value = backgroughFloat;
+            backgroundSlider.value = backgroundFloat;
             soundEffectsSlider.value = soundEffectsFloat;
-            PlayerPrefs.SetFloat(backgroundPref, backgroughFloat);
+            PlayerPrefs.SetFloat(backgroundPref, backgroundFloat);
             PlayerPrefs.SetFloat(soundEffectPref, soundEffectsFloat);
             PlayerPrefs.SetInt(firstPlay, -1);
         }
         else
         {
-            backgroughFloat = PlayerPrefs.GetFloat(backgroundPref);
-            backgroundSlider.value = backgroughFloat;
+            backgroundFloat = PlayerPrefs.GetFloat(backgroundPref);
+            backgroundSlider.value = backgroundFloat;
             soundEffectsFloat = PlayerPrefs.GetFloat(soundEffectPref);
             soundEffectsSlider.value = soundEffectsFloat;
         }
@@ -67,10 +67,10 @@ public class AudioManager : MonoBehaviour
 
     private void ContinueSettings()
     {
-        backgroughFloat = PlayerPrefs.GetFloat(backgroundPref);
+        backgroundFloat = PlayerPrefs.GetFloat(backgroundPref);
         soundEffectsFloat = PlayerPrefs.GetFloat(soundEffectPref);
 
-        backgroundAudio.volume = backgroughFloat;
+        backgroundAudio.volume = backgroundFloat;
 
         for (int i = 0; i < soundEffectsAudio.Length; i++)
         {
