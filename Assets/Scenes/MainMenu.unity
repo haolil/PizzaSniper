@@ -3188,6 +3188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentScope: 0
+  SelectedScope: SelectedScope
 --- !u!1 &234695564
 GameObject:
   m_ObjectHideFlags: 0
@@ -5201,6 +5202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentGun: 0
+  SelectedGun: SelectedGun
 --- !u!4 &439368586
 Transform:
   m_ObjectHideFlags: 0
