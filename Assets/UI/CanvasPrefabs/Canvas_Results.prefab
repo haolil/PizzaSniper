@@ -797,9 +797,9 @@ MonoBehaviour:
   scope2: {fileID: 21300000, guid: aba5b93e61b7c3e47b2be0dbca795197, type: 3}
   scope3: {fileID: 21300000, guid: 59141941f8c8bd249a990fd7d8c60930, type: 3}
   scope4: {fileID: 21300000, guid: 59141941f8c8bd249a990fd7d8c60930, type: 3}
-  scope5: {fileID: 21300000, guid: 523a109602eea22468311fb5b261b681, type: 3}
-  scope6: {fileID: 21300000, guid: aba5b93e61b7c3e47b2be0dbca795197, type: 3}
-  scope7: {fileID: 21300000, guid: aba5b93e61b7c3e47b2be0dbca795197, type: 3}
+  scope5: {fileID: -7256501373398131607, guid: b25af51006c4ece4c9209187982634b7, type: 3}
+  scope6: {fileID: 4090497990302127565, guid: b25af51006c4ece4c9209187982634b7, type: 3}
+  scope7: {fileID: -8607121283927924688, guid: b25af51006c4ece4c9209187982634b7, type: 3}
   scope8: {fileID: 21300000, guid: 59141941f8c8bd249a990fd7d8c60930, type: 3}
 --- !u!1 &221230881317308203
 GameObject:
@@ -859,7 +859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
