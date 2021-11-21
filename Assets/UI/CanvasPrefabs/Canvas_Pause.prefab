@@ -6610,7 +6610,7 @@ GameObject:
   - component: {fileID: 8889892851698348515}
   m_Layer: 5
   m_Name: Canvas_Pause
-  m_TagString: Untagged
+  m_TagString: Results
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6711,7 +6711,9 @@ MonoBehaviour:
   backgroundSlider: {fileID: 3368442316709497333}
   soundEffectsSlider: {fileID: 3368442317486756303}
   backgroundAudio: {fileID: 0}
-  soundEffectsAudio: []
+  soundEffectsAudio:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &8013248030402803809
 MonoBehaviour:
   m_ObjectHideFlags: 0

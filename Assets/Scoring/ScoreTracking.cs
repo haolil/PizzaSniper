@@ -1,7 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ScoreTracking : MonoBehaviour
 {
@@ -15,11 +14,13 @@ public class ScoreTracking : MonoBehaviour
     public float pineapplesTotalAtEnd = 0;
     public float totalKills;
     public float rankPercentage;
+    Timer timer;
 
     void Start()
     {
         pineappleTotalAtStart = pineapplesInScene.Length;
         pineapplesTotalAtEnd = pineappleTotalAtStart;
+        timer = FindObjectOfType<Timer>();
     }
 
     void Update()
@@ -37,18 +38,18 @@ public class ScoreTracking : MonoBehaviour
             Debug.Log("miss");
         }
 
-        //final
-        if (Input.GetKeyDown(KeyCode.X))
+        if (Input.anyKey)
         {
-            CalculateAccuracy();
-            CalculateKills();
-            accuracyValue.text = accuracy.ToString() + "%";
+            SceneManager.LoadScene("MainMenu");
         }
+    }
 
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            CalculateRank();
-        }
+    public void FinalResults()
+    {
+        CalculateAccuracy();
+        CalculateKills();
+        accuracyValue.text = accuracy.ToString() + "%";
+        CalculateRank();
     }
 
     public float CalculateAccuracy()
@@ -68,7 +69,7 @@ public class ScoreTracking : MonoBehaviour
 
     public void CalculateTime()
     {
-        //timeValue.text = //timeremaining.ToSring();
+        timeValue.text = timer.currentTime.ToString("f2");
     }
 
     public void CalculateRank()
@@ -77,40 +78,28 @@ public class ScoreTracking : MonoBehaviour
         rankPercentage = (totalKills/ pineappleTotalAtStart) * 100;
         rankPercentage = Mathf.Clamp(rankPercentage, 0, 100);
         rankPercentage = Mathf.Round(rankPercentage);
-        Debug.Log(rankPercentage);
-        Debug.Log(accuracy);
         float finalTotal = (rankPercentage + accuracy) * 0.5f;
-
-        Debug.Log("Grade Percentage = " + finalTotal); 
         finalTotal = Mathf.Clamp(finalTotal, 0, 100);
         finalTotal = Mathf.Round(finalTotal);
-
-        
 
         switch (finalTotal)
         {
             case float n when n >= 100:
-                Debug.Log("SSS");
                 rankValue.text = "SSS";
                 break;
             case float n when n >= 90:
-                Debug.Log("S");
                 rankValue.text = "S";
                 break;
             case float n when n >= 70:
-                Debug.Log("A");
                 rankValue.text = "A";
                 break;
             case float n when n >= 50:
-                Debug.Log("B");
                 rankValue.text = "B";
                 break;
             case float n when n >= 20:
-                Debug.Log("C");
                 rankValue.text = "C";
                 break;
             case float n when n >= 0:
-                Debug.Log("D");
                 rankValue.text = "D";
                 break;
         }
