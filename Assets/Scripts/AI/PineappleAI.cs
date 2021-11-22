@@ -7,19 +7,21 @@ public class PineappleAI : MonoBehaviour
     [SerializeField] float walkDistance = 3f;
     [SerializeField] bool startLeft = true;
     Snipe snipe;
+    Rigidbody2D rb;
 
     int currentState = 0; //0=idle, 1=run, 2=death
     int idleWalkState = 0; //0=left, 1=right, 2=stop
     int lastWalkState = 0;
     float idleSpeed = 1.0f;
-    float runSpeed = 2.5f;
+    float runSpeed = 3.5f;
+    Vector2 velocity;
     bool stateSwitched = false;
     bool runToLeft = false;
-
     bool walkStateActive = false;
 
     private void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         snipe = FindObjectOfType<Snipe>();
         if (startLeft)
         {
@@ -31,7 +33,7 @@ public class PineappleAI : MonoBehaviour
         }
         idleSpeed = idleSpeed * Random.Range(1.0f,1.2f);
     }
-    void Update()
+    void FixedUpdate()
     {
         if (snipe && snipe.hitCount > 0 && stateSwitched == false && currentState != 1)
         {
@@ -72,17 +74,19 @@ public class PineappleAI : MonoBehaviour
             switch (idleWalkState)
             {
                 case 0: //left
-                    transform.position += Vector3.left * idleSpeed * Time.deltaTime;
+                    velocity.x = Mathf.Lerp(velocity.x, Vector3.left.x * idleSpeed, Time.deltaTime * 6f);
                     break;
                 case 1: //right
-                    transform.position += Vector3.right * idleSpeed * Time.deltaTime;
+                    velocity.x = Mathf.Lerp(velocity.x, Vector3.right.x * idleSpeed, Time.deltaTime * 6f);
                     break;
                 case 2: //stop
+                    velocity.x = Mathf.Lerp(velocity.x, Vector3.zero.x * idleSpeed, Time.deltaTime * 15f);
                     break;
                 default:
                     Debug.LogWarning("AI Walk State Fail");
                     break;
             }
+            rb.MovePosition(rb.position + velocity * Time.deltaTime);
         }
     }
     IEnumerator WalkState(float time)
@@ -132,11 +136,12 @@ public class PineappleAI : MonoBehaviour
         }
         if(runToLeft == true)
         {
-            transform.position += Vector3.left * runSpeed * Time.deltaTime;
+            velocity.x = Mathf.Lerp(velocity.x, Vector3.left.x * runSpeed, Time.deltaTime * 8f);
         }
         else
         {
-            transform.position += Vector3.right * runSpeed * Time.deltaTime;
+            velocity.x = Mathf.Lerp(velocity.x, Vector3.right.x * runSpeed, Time.deltaTime * 8f);
         }
+        rb.MovePosition(rb.position + velocity * Time.deltaTime);
     }
 }
