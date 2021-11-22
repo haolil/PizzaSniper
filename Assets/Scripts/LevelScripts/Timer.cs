@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     public float startTime, currentTime;
-    bool timerStarted = false, timerFinished;
+    public bool timerStarted = false, timerFinished;
     public Text timerUI;
     PauseMenu pauseMenu;
     public GameObject results;

@@ -9,11 +9,13 @@ public class TimeManager : MonoBehaviour
     public AudioClip start, stop;
     AudioSource audioSource;
     AudioManager audioManager;
+    PauseMenu pauseMenu;
 
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
         audioManager = FindObjectOfType<AudioManager>();
+        pauseMenu = FindObjectOfType<PauseMenu>();
     }
 
     private void Update()
@@ -37,7 +39,7 @@ public class TimeManager : MonoBehaviour
 
     public void BulletTime()
     {
-        if (canSlow)
+        if (canSlow && !pauseMenu.paused)
         {
             canSlow = false;
             resetTime = false;
