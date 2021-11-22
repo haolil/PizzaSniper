@@ -6,17 +6,21 @@ public class PineappleAI : MonoBehaviour
 {
     [SerializeField] float walkDistance = 3f;
     [SerializeField] bool startLeft = true;
+    Snipe snipe;
 
     int currentState = 0; //0=idle, 1=run, 2=death
     int idleWalkState = 0; //0=left, 1=right, 2=stop
     int lastWalkState = 0;
     float idleSpeed = 1.0f;
     float runSpeed = 2.5f;
+    bool stateSwitched = false;
+    bool runToLeft = false;
 
     bool walkStateActive = false;
 
     private void Start()
     {
+        snipe = FindObjectOfType<Snipe>();
         if (startLeft)
         {
             idleWalkState = 0;
@@ -29,12 +33,18 @@ public class PineappleAI : MonoBehaviour
     }
     void Update()
     {
+        if (snipe && snipe.hitCount > 0 && stateSwitched == false && currentState != 1)
+        {
+            currentState = 1; // set state to run if a pineapple was killed
+            stateSwitched = true;
+        }
         switch (currentState)
         {
             case 0: //idle
                 WalkIdle();
                 break;
             case 1: //run
+                RunForLife();
                 break;
             case 2: //death
                 break;
@@ -104,5 +114,29 @@ public class PineappleAI : MonoBehaviour
                 break;
         }
         walkStateActive = false;
+    }
+    void RunForLife()
+    {
+        if(stateSwitched == true)
+        {
+            StopCoroutine("WalkState");
+            if (transform.position.x >= 0)
+            {
+                runToLeft = true;
+            }
+            else
+            {
+                runToLeft = false;
+            }
+            stateSwitched = false;
+        }
+        if(runToLeft == true)
+        {
+            transform.position += Vector3.left * runSpeed * Time.deltaTime;
+        }
+        else
+        {
+            transform.position += Vector3.right * runSpeed * Time.deltaTime;
+        }
     }
 }

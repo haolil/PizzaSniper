@@ -6,11 +6,12 @@ TagManager:
   tags:
   - Target
   - Results
+  - Enemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Enemy
   - Water
   - UI
   - 
