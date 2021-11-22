@@ -6766,11 +6766,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b37013686e8e25c46914f7132e262f7e, type: 3}
---- !u!82 &1889105277 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 6341840119822034558, guid: b37013686e8e25c46914f7132e262f7e, type: 3}
-  m_PrefabInstance: {fileID: 1889105276}
-  m_PrefabAsset: {fileID: 0}
 --- !u!850595691 &1895185643
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -7100,7 +7095,7 @@ PrefabInstance:
     - target: {fileID: 3368442316394734529, guid: 95b6d6662d3cb464aa1562f85a886875, type: 3}
       propertyPath: soundEffectsAudio.Array.data[0]
       value: 
-      objectReference: {fileID: 1889105277}
+      objectReference: {fileID: 1785501538}
     - target: {fileID: 3368442316394734529, guid: 95b6d6662d3cb464aa1562f85a886875, type: 3}
       propertyPath: soundEffectsAudio.Array.data[1]
       value: 
