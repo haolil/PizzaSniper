@@ -11,6 +11,7 @@ public class UIResultGunDisplay : MonoBehaviour
     private void Start()
     {
         gunController = FindObjectOfType<GunController>();
+        snipe = FindObjectOfType<Snipe>();
 
         switch (gunController.currentGun)
         {
