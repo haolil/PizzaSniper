@@ -6,6 +6,7 @@ public class PineappleAI : MonoBehaviour
 {
     [SerializeField] float walkDistance = 3f;
     [SerializeField] bool startLeft = true;
+    bool alive = true;
     Snipe snipe;
     TargetCheck targetCheck;
     AIManager aiManager;
@@ -48,26 +49,33 @@ public class PineappleAI : MonoBehaviour
     public void PineappleHit()
     {
         aiManager.TotalDead++;
-        Destroy(gameObject); // This is temporary, should have death animation later
+        gameObject.tag = "Untagged";
+        alive = false;
+        rb.velocity = Vector3.zero;
+        animator.Play("Explode");
+        Destroy(gameObject, 0.375f); // This is temporary, should have death animation later
     }
     void FixedUpdate()
     {
-        if (snipe && snipe.hitCount > 0 && stateSwitched == false && currentState != 1)
+        if (alive)
         {
-            currentState = 1; // set state to run if a pineapple was killed
-            stateSwitched = true;
-        }
-        switch (currentState)
-        {
-            case 0: //idle
-                WalkIdle();
-                break;
-            case 1: //run
-                RunForLife();
-                break;
-            default:
-                Debug.LogWarning("AI Current State Fail");
-                break;
+            if (snipe && snipe.hitCount > 0 && stateSwitched == false && currentState != 1)
+            {
+                currentState = 1; // set state to run if a pineapple was killed
+                stateSwitched = true;
+            }
+            switch (currentState)
+            {
+                case 0: //idle
+                    WalkIdle();
+                    break;
+                case 1: //run
+                    RunForLife();
+                    break;
+                default:
+                    Debug.LogWarning("AI Current State Fail");
+                    break;
+            }
         }
     }
     void WalkIdle()
