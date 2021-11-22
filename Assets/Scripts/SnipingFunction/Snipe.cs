@@ -9,13 +9,15 @@ public class Snipe : MonoBehaviour
     public bool aimCheck;
     public float scopeZoom;
 
-    public int firingModeSwitch = 1;
+    public int firingModeSwitch;
     public bool semiAuto;
     public bool fullAuto;
     public bool burstFire;
     public float fireRate;
     public int magSize;
+    public int currentBullet;
     public float reloadSpeed;
+    public bool canShoot;
 
     public float hitCount;
     public float missCount;
@@ -27,13 +29,19 @@ public class Snipe : MonoBehaviour
         scope = this.transform;
         aim = scope.GetChild(0);
         Cursor.visible = false;
+        firingModeSwitch = 3;
+        currentBullet = magSize;
+        canShoot = true;
     }
 
     // Update is called once per frame
     void Update()
     {
         FollowMouse();
+        FiringModeButton();
+        FireModeSet(firingModeSwitch);
         shootFunction();
+        Reload();
     }
 
     public void FollowMouse()
@@ -44,9 +52,24 @@ public class Snipe : MonoBehaviour
 
     public void shootFunction()
     {
-        if (Input.GetMouseButtonDown(0))
+        
+        if (Input.GetMouseButtonDown(0) && currentBullet > 0 && canShoot)
         {
-            HitCheck();
+            BulletCount();
+
+            if (Time.timeScale > 0)
+            {
+                HitCheck();
+                StartCoroutine(FireWait());
+            }
+
+        }
+        else if(Input.GetMouseButtonDown(0) && currentBullet == 0 && canShoot)
+        {
+            if(Time.timeScale > 0)
+            {
+                StartCoroutine(ReloadWait());
+            }
         }
     }
 
@@ -62,4 +85,73 @@ public class Snipe : MonoBehaviour
         }
     }
 
+
+    public void FiringModeButton()
+    {
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            if (firingModeSwitch > 1)
+            {
+                firingModeSwitch-=1;
+            }
+            else
+            {
+                firingModeSwitch = 3;
+            }
+        }
+    }
+
+    public void FireModeSet(int firingModeSwitch)
+    {
+        switch (firingModeSwitch)
+        {
+            case 3:
+                semiAuto = true;
+                fullAuto = false;
+                burstFire = false;
+                break;
+            case 2:
+                semiAuto = false;
+                fullAuto = true;
+                burstFire = false;
+                break;
+            case 1:
+                semiAuto = false;
+                fullAuto = false;
+                burstFire = true;
+                break;
+            default:
+                print("Firingmode not set");
+                break;
+        }
+    }
+
+    public void BulletCount()
+    {
+        if (currentBullet > 0)
+        {
+            currentBullet--;
+        }
+    }
+
+    public void Reload()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            StartCoroutine(ReloadWait());
+        }
+    }
+
+    public IEnumerator ReloadWait()
+    {
+        yield return new WaitForSeconds(reloadSpeed);
+        currentBullet = magSize;
+    }
+
+    public IEnumerator FireWait()
+    {
+        canShoot = false;
+        yield return new WaitForSeconds(fireRate);
+        canShoot = true;
+    }
 }
