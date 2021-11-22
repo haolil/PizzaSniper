@@ -10,6 +10,8 @@ public class PineappleAI : MonoBehaviour
     TargetCheck targetCheck;
     AIManager aiManager;
     Rigidbody2D rb;
+    Animator animator;
+    SpriteRenderer spriteRenderer;
 
     int currentState = 0; //0=idle, 1=run,
     int idleWalkState = 0; //0=left, 1=right, 2=stop
@@ -27,13 +29,19 @@ public class PineappleAI : MonoBehaviour
         snipe = FindObjectOfType<Snipe>();
         targetCheck = FindObjectOfType<TargetCheck>();
         aiManager = GetComponentInParent<AIManager>();
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         if (startLeft)
         {
             idleWalkState = 0;
+            animator.Play("Run");
+            spriteRenderer.flipX = false;
         }
         else
         {
             idleWalkState = 1;
+            animator.Play("Run");
+            spriteRenderer.flipX = true;
         }
         idleSpeed = idleSpeed * Random.Range(1.0f,1.2f);
     }
@@ -98,6 +106,20 @@ public class PineappleAI : MonoBehaviour
     }
     IEnumerator WalkState(float time)
     {
+        switch (idleWalkState)
+        {
+            case 0: //left
+                animator.Play("Run");
+                spriteRenderer.flipX = false;
+                break;
+            case 1: //right
+                animator.Play("Run");
+                spriteRenderer.flipX = true;
+                break;
+            case 2: //stop
+                animator.Play("Idle");
+                break;
+        }
         yield return new WaitForSeconds(time);
         switch (idleWalkState)
         {
@@ -134,10 +156,14 @@ public class PineappleAI : MonoBehaviour
             if (transform.position.x >= 0)
             {
                 runToLeft = true;
+                animator.Play("Panic");
+                spriteRenderer.flipX = false;
             }
             else
             {
                 runToLeft = false;
+                animator.Play("Panic");
+                spriteRenderer.flipX = true;
             }
             stateSwitched = false;
         }
