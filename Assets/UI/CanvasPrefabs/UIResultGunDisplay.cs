@@ -11,12 +11,13 @@ public class UIResultGunDisplay : MonoBehaviour
     private void Start()
     {
         gunController = FindObjectOfType<GunController>();
+        snipe = FindObjectOfType<Snipe>();
 
         switch (gunController.currentGun)
         {
             case 0:
                 gunUI.sprite = gun1;
-                snipe.fireRate = 5;
+                snipe.fireRate = 3;
                 break;
             case 1:
                 gunUI.sprite = gun2;
@@ -24,19 +25,19 @@ public class UIResultGunDisplay : MonoBehaviour
                 break;
             case 2:
                 gunUI.sprite = gun3;
-                snipe.fireRate = 5;
+                snipe.fireRate = 7;
                 break;
             case 3:
                 gunUI.sprite = gun4;
-                snipe.fireRate = 5;
+                snipe.fireRate = 9;
                 break;
             case 4:
                 gunUI.sprite = gun5;
-                snipe.fireRate = 5;
+                snipe.fireRate = 11;
                 break;
             case 5:
                 gunUI.sprite = gun6;
-                snipe.fireRate = 5;
+                snipe.fireRate = 13;
                 break;
         }
     }
