@@ -9396,6 +9396,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 73478753, guid: ae7bffdbbce14ee418df926e68bb29ae, type: 3}
+      propertyPath: m_SortingOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 389598729, guid: ae7bffdbbce14ee418df926e68bb29ae, type: 3}
+      propertyPath: m_SortingOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8322632161512041317, guid: ae7bffdbbce14ee418df926e68bb29ae, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8322632162377571344, guid: ae7bffdbbce14ee418df926e68bb29ae, type: 3}
       propertyPath: m_Name
       value: AIController
