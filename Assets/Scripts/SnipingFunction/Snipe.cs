@@ -8,6 +8,7 @@ public class Snipe : MonoBehaviour
     public Transform aim;
     public bool aimCheck;
     public float scopeZoom;
+    TargetCheck targetCheck;
 
     public int firingModeSwitch;
     public bool semiAuto;
@@ -26,6 +27,7 @@ public class Snipe : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        targetCheck = GetComponentInChildren<TargetCheck>();
         scope = this.transform;
         aim = scope.GetChild(0);
         Cursor.visible = false;
@@ -78,6 +80,10 @@ public class Snipe : MonoBehaviour
         if (aimCheck)
         {
             hitCount++;
+            if (targetCheck.Pineapple)
+            {
+                targetCheck.Pineapple.PineappleHit();
+            }
         }
         else
         {

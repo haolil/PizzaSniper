@@ -7,13 +7,15 @@ public class PineappleAI : MonoBehaviour
     [SerializeField] float walkDistance = 3f;
     [SerializeField] bool startLeft = true;
     Snipe snipe;
+    TargetCheck targetCheck;
+    AIManager aiManager;
     Rigidbody2D rb;
 
-    int currentState = 0; //0=idle, 1=run, 2=death
+    int currentState = 0; //0=idle, 1=run,
     int idleWalkState = 0; //0=left, 1=right, 2=stop
     int lastWalkState = 0;
     float idleSpeed = 1.0f;
-    float runSpeed = 3.5f;
+    float runSpeed = 3f;
     Vector2 velocity;
     bool stateSwitched = false;
     bool runToLeft = false;
@@ -23,6 +25,8 @@ public class PineappleAI : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         snipe = FindObjectOfType<Snipe>();
+        targetCheck = FindObjectOfType<TargetCheck>();
+        aiManager = GetComponentInParent<AIManager>();
         if (startLeft)
         {
             idleWalkState = 0;
@@ -32,6 +36,11 @@ public class PineappleAI : MonoBehaviour
             idleWalkState = 1;
         }
         idleSpeed = idleSpeed * Random.Range(1.0f,1.2f);
+    }
+    public void PineappleHit()
+    {
+        aiManager.TotalDead++;
+        Destroy(gameObject); // This is temporary, should have death animation later
     }
     void FixedUpdate()
     {
@@ -47,8 +56,6 @@ public class PineappleAI : MonoBehaviour
                 break;
             case 1: //run
                 RunForLife();
-                break;
-            case 2: //death
                 break;
             default:
                 Debug.LogWarning("AI Current State Fail");
