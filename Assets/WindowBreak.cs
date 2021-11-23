@@ -17,7 +17,6 @@ public class WindowBreak : MonoBehaviour
 
     public void CheckValue()
     {
-        Debug.Log("window");
         audioSource.PlayOneShot(breakSound);
         anim.SetBool("Break", true);
         this.enabled = false;
