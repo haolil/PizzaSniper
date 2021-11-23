@@ -48,7 +48,7 @@ public class PineappleAI : MonoBehaviour
     }
     public void PineappleHit()
     {
-        aiManager.TotalDead++;
+        aiManager.totalDead++;
         gameObject.tag = "Untagged";
         alive = false;
         rb.velocity = Vector3.zero;
@@ -61,6 +61,7 @@ public class PineappleAI : MonoBehaviour
         {
             if (snipe && snipe.hitCount > 0 && stateSwitched == false && currentState != 1)
             {
+                aiManager.PanicMode();
                 currentState = 1; // set state to run if a pineapple was killed
                 stateSwitched = true;
             }
