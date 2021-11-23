@@ -58,7 +58,7 @@ public class Timer : MonoBehaviour
 
     IEnumerator WaitForResults()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1.3f);
         results.SetActive(true);
         scoreTracking.FinalResults();
     }
