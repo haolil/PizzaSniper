@@ -7,12 +7,13 @@ public class SceneMove : MonoBehaviour
     bool canUseKeys;
     ScopeController scopeController;
     GunController gunController;
+    public string Scene;
 
     private void Start()
     {
         canUseKeys = false;
-        scopeController = FindObjectOfType<ScopeController>();
-        gunController = FindObjectOfType<GunController>();
+        /*scopeController = FindObjectOfType<ScopeController>();
+        gunController = FindObjectOfType<GunController>();*/
         StartCoroutine(Wait());
     }
 
@@ -24,7 +25,7 @@ public class SceneMove : MonoBehaviour
             {
                 Destroy(scopeController);
                 Destroy(gunController);
-                SceneManager.LoadScene("MainMenu");
+                SceneManager.LoadScene(Scene);
             }
         }
     }
