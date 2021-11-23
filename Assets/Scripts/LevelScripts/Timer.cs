@@ -36,11 +36,6 @@ public class Timer : MonoBehaviour
             timerUI.text = currentTime.ToString("f2");
         }
 
-        /*if (allPineapplesDead)
-        {
-            timerFinished = true;
-        }*/
-
         if (timerFinished)
         {
             pauseMenu.enabled = false;

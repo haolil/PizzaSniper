@@ -9,38 +9,36 @@ public class ScoreTracking : MonoBehaviour
     public float total;
     public float accuracy = 100;
     public Text accuracyValue, killValue, timeValue, rankValue;
-    GameObject[] pineapplesInScene = new GameObject[0];
+    public PineappleAI[] pineapplesInScene = new PineappleAI[0];
     public float pineappleTotalAtStart = 0;
     public float pineapplesTotalAtEnd = 0;
     public float totalKills;
     public float rankPercentage;
     Timer timer;
+    bool canKey;
+    AIManager aiManager;
+    Snipe snipe;
 
     void Start()
     {
+        aiManager = FindObjectOfType<AIManager>();
+        pineapplesInScene = FindObjectsOfType<PineappleAI>();
         pineappleTotalAtStart = pineapplesInScene.Length;
         pineapplesTotalAtEnd = pineappleTotalAtStart;
         timer = FindObjectOfType<Timer>();
+        snipe = FindObjectOfType<Snipe>();
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            hit++;
-            pineapplesTotalAtEnd--;
-            Debug.Log("kill");
-        }
+        snipe.hitCount = hit;
+        pineapplesTotalAtEnd--;
+        snipe.missCount =  miss++;
 
-        if (Input.GetKeyDown(KeyCode.D))
+        if(pineapplesInScene.Length == aiManager.TotalDead)
         {
-            miss++;
-            Debug.Log("miss");
-        }
-
-        if (Input.anyKey)
-        {
-            SceneManager.LoadScene("MainMenu");
+            timer.ShowResults();
+            timer.timerFinished = true;
         }
     }
 
@@ -63,7 +61,6 @@ public class ScoreTracking : MonoBehaviour
 
     public void CalculateKills()
     {
-        //pineapplesTotalAtEnd = //get total enemies based on AI set up array at the end of timer
         killValue.text = pineapplesTotalAtEnd.ToString() + "/" + pineappleTotalAtStart.ToString();
     }
 

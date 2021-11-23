@@ -641,6 +641,7 @@ GameObject:
   - component: {fileID: 221230881017579809}
   - component: {fileID: 8841733146718478883}
   - component: {fileID: 6992933637832614063}
+  - component: {fileID: 1622836323}
   m_Layer: 5
   m_Name: Canvas_Results
   m_TagString: Results
@@ -769,6 +770,31 @@ MonoBehaviour:
   scope6: {fileID: 21300000, guid: 6b67340c4997bc94ab857c196497323a, type: 3}
   scope7: {fileID: 21300000, guid: c5e40d57dc45b064eb78ec603329baf0, type: 3}
   scope8: {fileID: 21300000, guid: c5e40d57dc45b064eb78ec603329baf0, type: 3}
+--- !u!114 &1622836323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 221230881017579808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51f2c7e3896d43c429186b688509238b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hit: 0
+  miss: 0
+  total: 0
+  accuracy: 100
+  accuracyValue: {fileID: 438013653}
+  killValue: {fileID: 1981916130165219261}
+  timeValue: {fileID: 1447454060730072741}
+  rankValue: {fileID: 1469753264228579042}
+  pineapplesInScene: []
+  pineappleTotalAtStart: 0
+  pineapplesTotalAtEnd: 0
+  totalKills: 0
+  rankPercentage: 0
 --- !u!1 &221230881317308203
 GameObject:
   m_ObjectHideFlags: 0
@@ -1012,7 +1038,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4532568273658245995}
-  - component: {fileID: 8167476215960529054}
+  - component: {fileID: 381154970}
   m_Layer: 5
   m_Name: Continer
   m_TagString: Untagged
@@ -1047,7 +1073,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &8167476215960529054
+--- !u!114 &381154970
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1056,21 +1082,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4435681207081731057}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51f2c7e3896d43c429186b688509238b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2cab786abd99e734ca287f7a3db40360, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hit: 0
-  miss: 0
-  total: 0
-  accuracy: 100
-  accuracyValue: {fileID: 438013653}
-  killValue: {fileID: 1981916130165219261}
-  timeValue: {fileID: 1447454060730072741}
-  rankValue: {fileID: 1469753264228579042}
-  pineappleTotalAtStart: 0
-  pineapplesTotalAtEnd: 0
-  totalKills: 0
-  rankPercentage: 0
 --- !u!1 &6468324068248275708
 GameObject:
   m_ObjectHideFlags: 0
