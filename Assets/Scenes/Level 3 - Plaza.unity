@@ -11659,7 +11659,7 @@ GameObject:
   - component: {fileID: 897128597}
   - component: {fileID: 897128596}
   - component: {fileID: 897128595}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SmallWindowBreak
   m_TagString: Window
   m_Icon: {fileID: 0}
@@ -12942,7 +12942,7 @@ GameObject:
   - component: {fileID: 1015863858}
   - component: {fileID: 1015863857}
   - component: {fileID: 1015863856}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SmallWindowBreak
   m_TagString: Window
   m_Icon: {fileID: 0}
@@ -15451,7 +15451,7 @@ GameObject:
   - component: {fileID: 1137571394}
   - component: {fileID: 1137571393}
   - component: {fileID: 1137571392}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DoorBreak
   m_TagString: Window
   m_Icon: {fileID: 0}
@@ -26907,7 +26907,7 @@ GameObject:
   - component: {fileID: 2082787834}
   - component: {fileID: 2082787833}
   - component: {fileID: 2082787832}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LargeWindowBreak
   m_TagString: Window
   m_Icon: {fileID: 0}

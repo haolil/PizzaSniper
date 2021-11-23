@@ -32,17 +32,20 @@ public class PineappleAI : MonoBehaviour
         aiManager = GetComponentInParent<AIManager>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        if (startLeft)
+        if(gameObject.name != "Pineapple Joe Face")
         {
-            idleWalkState = 0;
-            animator.Play("Run");
-            spriteRenderer.flipX = false;
-        }
-        else
-        {
-            idleWalkState = 1;
-            animator.Play("Run");
-            spriteRenderer.flipX = true;
+            if (startLeft)
+            {
+                idleWalkState = 0;
+                animator.Play("Run");
+                spriteRenderer.flipX = false;
+            }
+            else
+            {
+                idleWalkState = 1;
+                animator.Play("Run");
+                spriteRenderer.flipX = true;
+            }
         }
         idleSpeed = idleSpeed * Random.Range(1.0f,1.2f);
     }
