@@ -6,7 +6,7 @@ public class Snipe : MonoBehaviour
 {
     public Transform scope;
     public Transform aim;
-    public bool aimCheck;
+    public bool aimCheck, windowCheck;
     public float scopeZoom;
     TargetCheck targetCheck;
     public Vector3 scopeKick;
@@ -67,6 +67,11 @@ public class Snipe : MonoBehaviour
 
             if (Time.timeScale > 0)
             {
+                if (targetCheck.windowBreak)
+                {
+                    targetCheck.windowBreak.CheckValue();
+                    targetCheck.windowBreak = null;
+                }
 
                 if (targetCheck.Pineapple)
                 {
@@ -96,6 +101,17 @@ public class Snipe : MonoBehaviour
         if (aimCheck)
         {
             hitCount++;
+            StartCoroutine(HitWait());
+            aimCheck = false;
+        }
+        else
+        {
+            StartCoroutine(MissWait());
+            missCount++;
+        }
+
+        if (windowCheck)
+        {
             StartCoroutine(HitWait());
             aimCheck = false;
         }

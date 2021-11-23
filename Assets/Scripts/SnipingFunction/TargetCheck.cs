@@ -5,7 +5,7 @@ using UnityEngine;
 public class TargetCheck : MonoBehaviour
 {
     public PineappleAI Pineapple;
-    WindowBreak windowBreak;
+    public WindowBreak windowBreak;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -17,7 +17,7 @@ public class TargetCheck : MonoBehaviour
 
         if (collision.tag == "Window")
         {
-            this.GetComponentInParent<Snipe>().aimCheck = true;
+            this.GetComponentInParent<Snipe>().windowCheck = true;
             windowBreak = collision.gameObject.GetComponent<WindowBreak>();
         }
     }
@@ -32,7 +32,7 @@ public class TargetCheck : MonoBehaviour
 
         if (collision.tag == "Window")
         {
-            this.GetComponentInParent<Snipe>().aimCheck = true;
+            this.GetComponentInParent<Snipe>().windowCheck = false;
             windowBreak = null;
         }
     }
