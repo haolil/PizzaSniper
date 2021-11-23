@@ -36,7 +36,7 @@ public class ScoreTracking : MonoBehaviour
         hit = snipe.hitCount;
         miss = snipe.missCount;
 
-        if (pineapplesInScene.Length == aiManager.totalDead)
+        if (aiManager.totalDead + aiManager.totalEscaped >= pineappleTotalAtStart)
         {
             timer.ShowResults();
             timer.timerFinished = true;

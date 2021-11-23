@@ -8,11 +8,11 @@ public class PineappleAI : MonoBehaviour
     [SerializeField] bool startLeft = true;
     bool alive = true;
     Snipe snipe;
-    TargetCheck targetCheck;
     AIManager aiManager;
     Rigidbody2D rb;
     Animator animator;
     SpriteRenderer spriteRenderer;
+    PizzaJoe pizzajoe = null;
 
     int currentState = 0; //0=idle, 1=run,
     int idleWalkState = 0; //0=left, 1=right, 2=stop
@@ -28,7 +28,6 @@ public class PineappleAI : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         snipe = FindObjectOfType<Snipe>();
-        targetCheck = FindObjectOfType<TargetCheck>();
         aiManager = GetComponentInParent<AIManager>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -47,10 +46,18 @@ public class PineappleAI : MonoBehaviour
                 spriteRenderer.flipX = true;
             }
         }
+        else
+        {
+            pizzajoe = GetComponent<PizzaJoe>();
+        }
         idleSpeed = idleSpeed * Random.Range(1.0f,1.2f);
     }
     public void PineappleHit()
     {
+        if (pizzajoe)
+        {
+            pizzajoe.BreakWindow();
+        }
         aiManager.totalDead++;
         gameObject.tag = "Untagged";
         alive = false;

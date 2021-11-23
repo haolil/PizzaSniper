@@ -6,7 +6,7 @@ public class AIManager : MonoBehaviour
 {
     public List<PineappleAI> pineapples = new List<PineappleAI>();
     public int totalDead = 0;
-    int totalEscaped = 0;
+    public int totalEscaped = 0;
     int startingPineapples;
     bool panicMode = false;
     Timer timer;
@@ -24,11 +24,6 @@ public class AIManager : MonoBehaviour
     public void Escaped()
     {
         totalEscaped++;
-        if(totalDead+totalEscaped >= startingPineapples)
-        {
-            timer.ShowResults();
-            timer.timerFinished = true;
-        }
     }
     public void PanicMode()
     {
