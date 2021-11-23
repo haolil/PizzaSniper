@@ -113,12 +113,8 @@ public class Snipe : MonoBehaviour
         if (windowCheck)
         {
             StartCoroutine(HitWait());
+            missCount--;
             aimCheck = false;
-        }
-        else
-        {
-            StartCoroutine(MissWait());
-            //missCount++;
         }
     }
 
