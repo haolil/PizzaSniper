@@ -68,11 +68,16 @@ public class Snipe : MonoBehaviour
 
             if (Time.timeScale > 0)
             {
+
                 if (targetCheck.Pineapple)
                 {
                     targetCheck.Pineapple.PineappleHit();
+                    aimCheck = false;
                     targetCheck.Pineapple = null;
                 }
+
+                
+
                 HitCheck();
                 StartCoroutine(FireWait());
             }
@@ -93,10 +98,6 @@ public class Snipe : MonoBehaviour
         if (aimCheck)
         {
             hitCount++;
-            //if (targetCheck.Pineapple)
-            //{
-            //    targetCheck.Pineapple.PineappleHit();
-            //}
         }
         else
         {
