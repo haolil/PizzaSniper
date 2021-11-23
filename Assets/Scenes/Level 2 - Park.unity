@@ -8939,6 +8939,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 911366044}
     - target: {fileID: 3368442316394734529, guid: 95b6d6662d3cb464aa1562f85a886875, type: 3}
+      propertyPath: soundEffectsAudio.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3368442316394734529, guid: 95b6d6662d3cb464aa1562f85a886875, type: 3}
       propertyPath: soundEffectsAudio.Array.data[0]
       value: 
       objectReference: {fileID: 172414741}
@@ -8946,6 +8950,34 @@ PrefabInstance:
       propertyPath: soundEffectsAudio.Array.data[1]
       value: 
       objectReference: {fileID: 1785501538}
+    - target: {fileID: 3368442316394734529, guid: 95b6d6662d3cb464aa1562f85a886875, type: 3}
+      propertyPath: soundEffectsAudio.Array.data[2]
+      value: 
+      objectReference: {fileID: 387857347}
+    - target: {fileID: 3368442316394734529, guid: 95b6d6662d3cb464aa1562f85a886875, type: 3}
+      propertyPath: soundEffectsAudio.Array.data[3]
+      value: 
+      objectReference: {fileID: 387857346}
+    - target: {fileID: 3368442316394734529, guid: 95b6d6662d3cb464aa1562f85a886875, type: 3}
+      propertyPath: soundEffectsAudio.Array.data[4]
+      value: 
+      objectReference: {fileID: 387857345}
+    - target: {fileID: 3368442316394734529, guid: 95b6d6662d3cb464aa1562f85a886875, type: 3}
+      propertyPath: soundEffectsAudio.Array.data[5]
+      value: 
+      objectReference: {fileID: 577579215}
+    - target: {fileID: 3368442316394734529, guid: 95b6d6662d3cb464aa1562f85a886875, type: 3}
+      propertyPath: soundEffectsAudio.Array.data[6]
+      value: 
+      objectReference: {fileID: 1822838439}
+    - target: {fileID: 3368442316394734529, guid: 95b6d6662d3cb464aa1562f85a886875, type: 3}
+      propertyPath: soundEffectsAudio.Array.data[7]
+      value: 
+      objectReference: {fileID: 92170469}
+    - target: {fileID: 3368442316394734529, guid: 95b6d6662d3cb464aa1562f85a886875, type: 3}
+      propertyPath: soundEffectsAudio.Array.data[8]
+      value: 
+      objectReference: {fileID: 690898733}
     - target: {fileID: 3368442316394734533, guid: 95b6d6662d3cb464aa1562f85a886875, type: 3}
       propertyPath: m_Pivot.x
       value: 0
