@@ -57,7 +57,7 @@ public class PineappleAI : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (alive)
+        if (alive && gameObject.name != "Pineapple Joe Face")
         {
             if (snipe && snipe.hitCount > 0 && stateSwitched == false && currentState != 1)
             {
