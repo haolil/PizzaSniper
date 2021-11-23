@@ -13,6 +13,7 @@ public class CursorRotate : MonoBehaviour
 
     void Start()
     {
+        Cursor.visible = true;
         Cursor.SetCursor(cursorTextureArray[0], new Vector2(50, 50), CursorMode.Auto);
     }
 

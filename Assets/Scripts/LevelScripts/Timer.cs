@@ -16,7 +16,7 @@ public class Timer : MonoBehaviour
         currentTime = startTime;
         timerStarted = true;
         timerUI.text = currentTime.ToString();
-        scoreTracking = results.GetComponent<ScoreTracking>();
+        scoreTracking = FindObjectOfType<ScoreTracking>();
     }
 
     private void Update()

@@ -3590,10 +3590,6 @@ PrefabInstance:
       propertyPath: results
       value: 
       objectReference: {fileID: 381154969}
-    - target: {fileID: 2093888411927982419, guid: f742a55e75c40c347936c3b4fe09313f, type: 3}
-      propertyPath: startTime
-      value: 60
-      objectReference: {fileID: 0}
     - target: {fileID: 2093888411927982423, guid: f742a55e75c40c347936c3b4fe09313f, type: 3}
       propertyPath: m_Pivot.x
       value: 0
