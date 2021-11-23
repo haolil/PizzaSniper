@@ -72,7 +72,6 @@ public class Snipe : MonoBehaviour
                 if (targetCheck.Pineapple)
                 {
                     targetCheck.Pineapple.PineappleHit();
-                    aimCheck = false;
                     targetCheck.Pineapple = null;
                 }
 
@@ -98,6 +97,7 @@ public class Snipe : MonoBehaviour
         if (aimCheck)
         {
             hitCount++;
+            aimCheck = false;
         }
         else
         {
