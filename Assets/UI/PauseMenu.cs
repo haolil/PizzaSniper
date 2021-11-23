@@ -43,6 +43,8 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
+        snipe.SetActive(true);
+        blur.SetActive(true);
         paused = false;
         timer.timerStarted = true;
         pauseMenu.SetActive(false);
