@@ -6,10 +6,14 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenu, phase1, phase2, phase2Credits, phase2Controls;
     public bool paused;
     public GameObject snipe, blur;
+    ScopeController scopeController;
+    GunController gunController;
 
     private void Start()
     {
         timer = FindObjectOfType<Timer>();
+        scopeController = FindObjectOfType<ScopeController>();
+        gunController = FindObjectOfType<GunController>();
     }
 
     void Update()
@@ -18,6 +22,7 @@ public class PauseMenu : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
+                Cursor.visible = true;
                 snipe.SetActive(false);
                 blur.SetActive(false);
                 paused = true;
@@ -28,6 +33,7 @@ public class PauseMenu : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Escape))
         {
+            Cursor.visible = false;
             snipe.SetActive(true);
             blur.SetActive(true);
             paused = false;
@@ -43,6 +49,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
+        Cursor.visible = false;
         snipe.SetActive(true);
         blur.SetActive(true);
         paused = false;
@@ -53,5 +60,11 @@ public class PauseMenu : MonoBehaviour
         phase2.SetActive(false);
         phase2Credits.SetActive(false);
         phase2Controls.SetActive(false);
+    }
+
+    public void Quit()
+    {
+        Destroy(scopeController);
+        Destroy(gunController);
     }
 }

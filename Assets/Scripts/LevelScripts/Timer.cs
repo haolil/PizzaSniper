@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
@@ -52,6 +53,12 @@ public class Timer : MonoBehaviour
     }
     public void ShowResults()
     {
+        StartCoroutine(WaitForResults());
+    }
+
+    IEnumerator WaitForResults()
+    {
+        yield return new WaitForSeconds(2);
         results.SetActive(true);
         scoreTracking.FinalResults();
     }
