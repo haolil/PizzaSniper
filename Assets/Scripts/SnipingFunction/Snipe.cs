@@ -71,6 +71,7 @@ public class Snipe : MonoBehaviour
                 if (targetCheck.Pineapple)
                 {
                     targetCheck.Pineapple.PineappleHit();
+                    targetCheck.Pineapple = null;
                 }
                 HitCheck();
                 StartCoroutine(FireWait());

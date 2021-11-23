@@ -533,15 +533,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3026404966150969043, guid: 3c76685d256297e4f877b2e497833202, type: 3}
       propertyPath: reloadSpeed
-      value: 1
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 3026404966150969043, guid: 3c76685d256297e4f877b2e497833202, type: 3}
       propertyPath: scopeKick.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3026404966150969043, guid: 3c76685d256297e4f877b2e497833202, type: 3}
       propertyPath: scopeKick.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c76685d256297e4f877b2e497833202, type: 3}
