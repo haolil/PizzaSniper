@@ -118,7 +118,7 @@ public class Snipe : MonoBehaviour
         else
         {
             StartCoroutine(MissWait());
-            missCount++;
+            //missCount++;
         }
     }
 
