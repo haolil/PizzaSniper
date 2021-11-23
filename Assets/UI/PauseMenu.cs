@@ -5,6 +5,7 @@ public class PauseMenu : MonoBehaviour
     Timer timer;
     public GameObject pauseMenu, phase1, phase2, phase2Credits, phase2Controls;
     public bool paused;
+    public GameObject snipe, blur;
 
     private void Start()
     {
@@ -17,6 +18,8 @@ public class PauseMenu : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
+                snipe.SetActive(false);
+                blur.SetActive(false);
                 paused = true;
                 timer.timerStarted = false;
                 pauseMenu.SetActive(true);
@@ -25,6 +28,8 @@ public class PauseMenu : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Escape))
         {
+            snipe.SetActive(true);
+            blur.SetActive(true);
             paused = false;
             timer.timerStarted = true;
             pauseMenu.SetActive(false);
