@@ -170,6 +170,10 @@ MonoBehaviour:
   currentBullet: 0
   reloadSpeed: 0
   canShoot: 0
+  shoot: {fileID: 8300000, guid: 2efa4dee0197663469cd13b1958bcc5c, type: 3}
+  reload: {fileID: 8300000, guid: 0840e2866debaec46ba786a8e943e8e3, type: 3}
+  miss: {fileID: 8300000, guid: eaa0815bb4c5b7a43a8f483846eef918, type: 3}
+  hit: {fileID: 8300000, guid: e4e8250c45652ed40867c7b5295cc873, type: 3}
   hitCount: 0
   missCount: 0
 --- !u!82 &6120009811761925514

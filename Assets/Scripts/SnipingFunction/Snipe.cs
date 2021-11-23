@@ -9,11 +9,6 @@ public class Snipe : MonoBehaviour
     public bool aimCheck;
     public float scopeZoom;
     TargetCheck targetCheck;
-
-    //public int firingModeSwitch;
-    //public bool semiAuto;
-    //public bool fullAuto;
-    //public bool burstFire;
     public Vector3 scopeKick;
     public float kickWait;
     public bool isKicking;
@@ -23,12 +18,17 @@ public class Snipe : MonoBehaviour
     public float reloadSpeed;
     public bool canShoot;
     private AudioSource _shootSoundAudioSource;
+    public AudioClip shoot, reload, miss, hit;
     public float hitCount;
     public float missCount;
 
+    //public int firingModeSwitch;
+    //public bool semiAuto;
+    //public bool fullAuto;
+    //public bool burstFire;
+
     void Start()
     {
-
         _shootSoundAudioSource = GetComponent<AudioSource>();
         targetCheck = GetComponentInChildren<TargetCheck>();
         scope = this.transform;
@@ -74,7 +74,7 @@ public class Snipe : MonoBehaviour
                     targetCheck.Pineapple = null;
                 }
 
-                _shootSoundAudioSource.Play();
+                _shootSoundAudioSource.PlayOneShot(shoot);
 
                 HitCheck();
                 StartCoroutine(FireWait());
@@ -96,10 +96,12 @@ public class Snipe : MonoBehaviour
         if (aimCheck)
         {
             hitCount++;
+            StartCoroutine(HitWait());
             aimCheck = false;
         }
         else
         {
+            StartCoroutine(MissWait());
             missCount++;
         }
     }
@@ -170,6 +172,7 @@ public class Snipe : MonoBehaviour
 
     public IEnumerator ReloadWait()
     {
+        _shootSoundAudioSource.PlayOneShot(reload);
         yield return new WaitForSeconds(reloadSpeed);
         currentBullet = magSize;
     }
@@ -186,5 +189,15 @@ public class Snipe : MonoBehaviour
         isKicking = true;
         yield return new WaitForSeconds(kickWait);
         isKicking = false;
+    }
+    public IEnumerator HitWait()
+    {
+        yield return new WaitForSeconds(0.1f);
+        _shootSoundAudioSource.PlayOneShot(hit);
+    }
+    public IEnumerator MissWait()
+    {
+        yield return new WaitForSeconds(0.1f);
+        _shootSoundAudioSource.PlayOneShot(miss);
     }
 }

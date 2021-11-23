@@ -503,8 +503,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoomedInRadius: 0.75
-  zoomedOutRadius: 5
-  initialZoom: 2
+  zoomedOutRadius: 4
+  initialZoom: 4
   scale: 1
   maxSpeed: 30
   movementDampening: 0.2

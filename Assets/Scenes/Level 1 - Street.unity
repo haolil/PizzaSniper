@@ -2747,6 +2747,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &493368175 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3026404966150969040, guid: 3c76685d256297e4f877b2e497833202, type: 3}
+  m_PrefabInstance: {fileID: 539630147}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &506654156
 GameObject:
   m_ObjectHideFlags: 0
@@ -4892,7 +4897,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 900952058}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.61, y: -3.17, z: 0}
+  m_LocalPosition: {x: 5.33, y: -3.17, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 309766007}
@@ -8837,6 +8842,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1622836323, guid: 06e2282180cd4044e869551fcdd8129c, type: 3}
+      propertyPath: maskObject
+      value: 
+      objectReference: {fileID: 1359528130}
+    - target: {fileID: 1622836323, guid: 06e2282180cd4044e869551fcdd8129c, type: 3}
+      propertyPath: snipeObject
+      value: 
+      objectReference: {fileID: 493368175}
     - target: {fileID: 221230881017579808, guid: 06e2282180cd4044e869551fcdd8129c, type: 3}
       propertyPath: m_Name
       value: Canvas_Results

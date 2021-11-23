@@ -18,6 +18,7 @@ public class ScoreTracking : MonoBehaviour
     bool canKey, rankCalulated;
     AIManager aiManager;
     Snipe snipe;
+    public GameObject snipeObject, maskObject;
 
     void Start()
     {
@@ -74,6 +75,8 @@ public class ScoreTracking : MonoBehaviour
     {
         if (!rankCalulated)
         {
+            snipeObject.SetActive(false);
+            maskObject.SetActive(false);
             pineapplesTotalAtEnd = pineapplesTotalAtEnd - hit;
             totalKills = pineappleTotalAtStart - pineapplesTotalAtEnd;
             rankPercentage = (totalKills / pineappleTotalAtStart) * 100;

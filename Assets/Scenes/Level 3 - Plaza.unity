@@ -2409,6 +2409,11 @@ AudioSource:
   m_CorrespondingSourceObject: {fileID: 6120009811761925514, guid: 3c76685d256297e4f877b2e497833202, type: 3}
   m_PrefabInstance: {fileID: 310149067}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &310149069 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3026404966150969040, guid: 3c76685d256297e4f877b2e497833202, type: 3}
+  m_PrefabInstance: {fileID: 310149067}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &315214675
 GameObject:
   m_ObjectHideFlags: 0
@@ -15433,6 +15438,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1622836323, guid: 06e2282180cd4044e869551fcdd8129c, type: 3}
+      propertyPath: maskObject
+      value: 
+      objectReference: {fileID: 358657410}
+    - target: {fileID: 1622836323, guid: 06e2282180cd4044e869551fcdd8129c, type: 3}
+      propertyPath: snipeObject
+      value: 
+      objectReference: {fileID: 310149069}
     - target: {fileID: 221230881017579808, guid: 06e2282180cd4044e869551fcdd8129c, type: 3}
       propertyPath: m_Name
       value: Canvas_Results
