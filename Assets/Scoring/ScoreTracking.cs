@@ -48,6 +48,7 @@ public class ScoreTracking : MonoBehaviour
         CalculateKills();
         accuracyValue.text = accuracy.ToString() + "%";
         CalculateRank();
+        CalculateTime();
     }
 
     public float CalculateAccuracy()
