@@ -31,11 +31,10 @@ public class ScoreTracking : MonoBehaviour
 
     void Update()
     {
-        snipe.hitCount = hit;
-        pineapplesTotalAtEnd--;
-        snipe.missCount =  miss++;
+        hit = snipe.hitCount;
+        miss = snipe.missCount;
 
-        if(pineapplesInScene.Length == aiManager.TotalDead)
+        if (pineapplesInScene.Length == aiManager.TotalDead)
         {
             timer.ShowResults();
             timer.timerFinished = true;
@@ -44,6 +43,7 @@ public class ScoreTracking : MonoBehaviour
 
     public void FinalResults()
     {
+        pineapplesTotalAtEnd = hit;
         CalculateAccuracy();
         CalculateKills();
         accuracyValue.text = accuracy.ToString() + "%";

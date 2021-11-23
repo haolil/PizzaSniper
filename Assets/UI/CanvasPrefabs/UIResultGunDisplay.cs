@@ -17,23 +17,23 @@ public class UIResultGunDisplay : MonoBehaviour
         {
             case 0:
                 gunUI.sprite = gun1;
-                snipe.fireRate = 5;
+                snipe.fireRate = 0.5f;
                 break;
             case 1:
                 gunUI.sprite = gun2;
-                snipe.fireRate = 4;
+                snipe.fireRate = 0.4f;
                 break;
             case 2:
                 gunUI.sprite = gun3;
-                snipe.fireRate = 3;
+                snipe.fireRate = 0.3f;
                 break;
             case 3:
                 gunUI.sprite = gun4;
-                snipe.fireRate = 2;
+                snipe.fireRate = 0.2f;
                 break;
             case 4:
                 gunUI.sprite = gun5;
-                snipe.fireRate = 1;
+                snipe.fireRate = 0.1f;
                 break;
             case 5:
                 gunUI.sprite = gun6;
