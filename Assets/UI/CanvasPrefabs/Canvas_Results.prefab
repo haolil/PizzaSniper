@@ -850,6 +850,7 @@ MonoBehaviour:
   scope6: {fileID: 21300000, guid: 6b67340c4997bc94ab857c196497323a, type: 3}
   scope7: {fileID: 21300000, guid: c5e40d57dc45b064eb78ec603329baf0, type: 3}
   scope8: {fileID: 21300000, guid: c5e40d57dc45b064eb78ec603329baf0, type: 3}
+  scopeChange: {fileID: 0}
 --- !u!114 &1622836323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -875,6 +876,8 @@ MonoBehaviour:
   pineapplesTotalAtEnd: 0
   totalKills: 0
   rankPercentage: 0
+  snipeObject: {fileID: 0}
+  maskObject: {fileID: 0}
 --- !u!1 &221230881317308203
 GameObject:
   m_ObjectHideFlags: 0
@@ -912,6 +915,7 @@ RectTransform:
   - {fileID: 2051898327}
   - {fileID: 1940440789}
   - {fileID: 404271982}
+  - {fileID: 7335828616401913272}
   m_Father: {fileID: 221230881017579812}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -970,6 +974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cab786abd99e734ca287f7a3db40360, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Scene: Level 3 - Plaza
 --- !u!1 &221230881322686716
 GameObject:
   m_ObjectHideFlags: 0
@@ -1129,6 +1134,105 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: 10/10
+--- !u!1 &6032950768316758254
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7335828616401913272}
+  - component: {fileID: 7254803718654709304}
+  - component: {fileID: 8109241028895170988}
+  - component: {fileID: 6342985724753355742}
+  m_Layer: 5
+  m_Name: AnyKey
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &7335828616401913272
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6032950768316758254}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 221230881317308204}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 128.8, y: -239}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0, y: 0.5}
+--- !u!222 &7254803718654709304
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6032950768316758254}
+  m_CullTransparentMesh: 1
+--- !u!114 &8109241028895170988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6032950768316758254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 652f7165b7c30ab46af6c4aad90a639b, type: 2}
+    m_FontSize: 30
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 50
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: Press Any Key to Continue
+--- !u!95 &6342985724753355742
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6032950768316758254}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 226912e8b509d854e9bdd8861e37ee17, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6468324068248275708
 GameObject:
   m_ObjectHideFlags: 0
