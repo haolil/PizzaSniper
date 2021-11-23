@@ -16231,6 +16231,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1798003398367638540, guid: 06e2282180cd4044e869551fcdd8129c, type: 3}
+      propertyPath: Scene
+      value: Level 2 - Park
+      objectReference: {fileID: 0}
     - target: {fileID: 4435681207081731057, guid: 06e2282180cd4044e869551fcdd8129c, type: 3}
       propertyPath: m_IsActive
       value: 1
