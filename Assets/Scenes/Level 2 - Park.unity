@@ -791,6 +791,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c76685d256297e4f877b2e497833202, type: 3}
+--- !u!82 &172414741 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6120009811761925514, guid: 3c76685d256297e4f877b2e497833202, type: 3}
+  m_PrefabInstance: {fileID: 172414740}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &179078760
 GameObject:
   m_ObjectHideFlags: 0
@@ -4939,6 +4944,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 721161112}
     m_Modifications:
     - target: {fileID: 1000013934981788, guid: 4c9083cb81508ca44a94bd4f3d6e17a4, type: 3}
+      propertyPath: m_Name
+      value: ScopeMask
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013934981788, guid: 4c9083cb81508ca44a94bd4f3d6e17a4, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -5048,11 +5057,6 @@ Transform:
 --- !u!1 &1067684115 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000013934981788, guid: 4c9083cb81508ca44a94bd4f3d6e17a4, type: 3}
-  m_PrefabInstance: {fileID: 1067684113}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &1067684116 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 82000012259247168, guid: 4c9083cb81508ca44a94bd4f3d6e17a4, type: 3}
   m_PrefabInstance: {fileID: 1067684113}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1069408394
@@ -8166,7 +8170,7 @@ PrefabInstance:
     - target: {fileID: 3368442316394734529, guid: 95b6d6662d3cb464aa1562f85a886875, type: 3}
       propertyPath: soundEffectsAudio.Array.data[0]
       value: 
-      objectReference: {fileID: 1067684116}
+      objectReference: {fileID: 172414741}
     - target: {fileID: 3368442316394734529, guid: 95b6d6662d3cb464aa1562f85a886875, type: 3}
       propertyPath: soundEffectsAudio.Array.data[1]
       value: 

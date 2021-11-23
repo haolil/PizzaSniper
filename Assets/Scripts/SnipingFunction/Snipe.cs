@@ -22,14 +22,14 @@ public class Snipe : MonoBehaviour
     public int currentBullet;
     public float reloadSpeed;
     public bool canShoot;
-
+    private AudioSource _shootSoundAudioSource;
     public float hitCount;
     public float missCount;
 
-
-    // Start is called before the first frame update
     void Start()
     {
+
+        _shootSoundAudioSource = GetComponent<AudioSource>();
         targetCheck = GetComponentInChildren<TargetCheck>();
         scope = this.transform;
         aim = scope.GetChild(0);
@@ -39,7 +39,6 @@ public class Snipe : MonoBehaviour
         canShoot = true;
     }
 
-    // Update is called once per frame
     void Update()
     {
         FollowMouse();
@@ -75,7 +74,7 @@ public class Snipe : MonoBehaviour
                     targetCheck.Pineapple = null;
                 }
 
-                
+                _shootSoundAudioSource.Play();
 
                 HitCheck();
                 StartCoroutine(FireWait());
