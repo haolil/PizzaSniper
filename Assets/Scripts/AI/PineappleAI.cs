@@ -13,6 +13,7 @@ public class PineappleAI : MonoBehaviour
     Animator animator;
     SpriteRenderer spriteRenderer;
     PizzaJoe pizzajoe = null;
+    AudioSource audioSource;
 
     int currentState = 0; //0=idle, 1=run,
     int idleWalkState = 0; //0=left, 1=right, 2=stop
@@ -31,6 +32,7 @@ public class PineappleAI : MonoBehaviour
         aiManager = GetComponentInParent<AIManager>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        audioSource = GetComponent<AudioSource>();
         if(gameObject.name != "Pineapple Joe Face")
         {
             if (startLeft)
@@ -171,6 +173,10 @@ public class PineappleAI : MonoBehaviour
     {
         if(stateSwitched == true)
         {
+            if (audioSource)
+            {
+                audioSource.Play();
+            }
             StopCoroutine("WalkState");
             if (transform.position.x >= 0)
             {

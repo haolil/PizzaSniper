@@ -5,7 +5,6 @@ using UnityEngine;
 public class Snipe : MonoBehaviour
 {
     public Transform scope;
-    public Transform aim;
     public bool aimCheck, windowCheck;
     public float scopeZoom;
     TargetCheck targetCheck;
@@ -21,6 +20,8 @@ public class Snipe : MonoBehaviour
     public AudioClip shoot, reload, miss, hit;
     public float hitCount;
     public float missCount;
+    public PineappleAI Pineapple;
+    public WindowBreak windowBreak;
 
     //public int firingModeSwitch;
     //public bool semiAuto;
@@ -32,7 +33,6 @@ public class Snipe : MonoBehaviour
         _shootSoundAudioSource = GetComponent<AudioSource>();
         targetCheck = GetComponentInChildren<TargetCheck>();
         scope = this.transform;
-        aim = scope.GetChild(0);
         Cursor.visible = false;
         //firingModeSwitch = 3;
         currentBullet = magSize;
@@ -64,19 +64,19 @@ public class Snipe : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && currentBullet > 0 && canShoot)
         {
             BulletCount();
-
+            ShootGun();
             if (Time.timeScale > 0)
             {
-                if (targetCheck.windowBreak)
+                if (windowBreak)
                 {
-                    targetCheck.windowBreak.CheckValue();
-                    targetCheck.windowBreak = null;
+                    windowBreak.CheckValue();
+                    windowBreak = null;
                 }
 
-                if (targetCheck.Pineapple)
+                if (Pineapple)
                 {
-                    targetCheck.Pineapple.PineappleHit();
-                    targetCheck.Pineapple = null;
+                    Pineapple.PineappleHit();
+                    Pineapple = null;
                 }
 
                 _shootSoundAudioSource.PlayOneShot(shoot);
@@ -91,6 +91,40 @@ public class Snipe : MonoBehaviour
             if(Time.timeScale > 0)
             {
                 StartCoroutine(ReloadWait());
+            }
+        }
+    }
+
+    void ShootGun()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
+            RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
+            if (hit.collider != null && hit.collider.tag == "Enemy" || hit.collider.tag == "Window")
+            {
+                this.GetComponentInParent<Snipe>().aimCheck = true;
+                if (hit.collider.tag == "Enemy")
+                {
+                    Pineapple = hit.collider.gameObject.GetComponent<PineappleAI>();
+                }
+                else if (hit.collider.tag == "Window")
+                {
+                    windowBreak = hit.collider.gameObject.GetComponent<WindowBreak>();
+                }
+            }
+            else
+            {
+                this.GetComponentInParent<Snipe>().aimCheck = false;
+                if (hit.collider.tag == "Enemy")
+                {
+                    Pineapple = null;
+                }
+                else if (hit.collider.tag == "Window")
+                {
+                    windowBreak = null;
+                }
             }
         }
     }
