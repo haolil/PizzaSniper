@@ -3108,7 +3108,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh607242
+=======
+  m_Name: pb_Mesh564794
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3119,8 +3123,8 @@ Mesh:
     firstVertex: 0
     vertexCount: 6
     localAABB:
-      m_Center: {x: 4.125, y: 1.9811602, z: -0.000049948692}
-      m_Extent: {x: 9.745306, y: 2.9811602, z: 0.000049948692}
+      m_Center: {x: 4.1250005, y: 0.7139406, z: -0.000049948692}
+      m_Extent: {x: 9.745306, y: 4.2483797, z: 0.000049948692}
   m_Shapes:
     vertices: []
     shapes: []
@@ -3199,7 +3203,7 @@ Mesh:
       format: 0
       dimension: 0
     m_DataSize: 288
-    _typelessdata: 8cd9b3c000000000000000000000000000000000000080bf0000803f0000000000000000000080bf8cd9b3c000000000583dcf3e54cb9e40000000000000000000000000000080bf0000803f0000000000000000000080bf583dcf3e54cb9e40c6ec5d4100000000000000000000000000000000000080bf0000803f0000000000000000000080bfc6ec5d41000000002a0cfb4054cb9e40000000000000000000000000000080bf0000803f0000000000000000000080bf2a0cfb4054cb9e40c6ec5d41000080bf0080d1b8000000000080d138000080bf0000803f0000000000000000000080bfc6ec5d41000080bf8cd9b3c0000080bf0080d1b8000000000080d138000080bf0000803f0000000000000000000080bf8cd9b3c0000080bf
+    _typelessdata: 8cd9b3c000000000000000000000000000000000000080bf0000803f0000000000000000000080bf8cd9b3c000000000583dcf3e54cb9e40000000000000000000000000000080bf0000803f0000000000000000000080bf583dcf3e54cb9e40c6ec5d4100000000000000000000000000000000000080bf0000803f0000000000000000000080bfc6ec5d41000000002a0cfb4054cb9e40000000000000000000000000000080bf0000803f0000000000000000000080bf2a0cfb4054cb9e40c7ec5d41403462c00080d1b8000000007a18ed37000080bf0000803f0000000000000000000080bfc7ec5d41403462c08cd9b3c0403462c00080d1b8000000007a18ed37000080bf0000803f0000000000000000000080bf8cd9b3c0403462c0
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -3253,8 +3257,8 @@ Mesh:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
-    m_Center: {x: 4.125, y: 1.9811602, z: -0.000049948692}
-    m_Extent: {x: 9.745306, y: 2.9811602, z: 0.000049948692}
+    m_Center: {x: 4.1250005, y: 0.7139406, z: -0.000049948692}
+    m_Extent: {x: 9.745306, y: 4.2483797, z: 0.000049948692}
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
@@ -6794,8 +6798,8 @@ MonoBehaviour:
   - {x: 7.845235, y: 4.9623203, z: 0}
   - {x: 13.870306, y: 0, z: 0}
   - {x: -5.620306, y: 0, z: 0}
-  - {x: 13.870306, y: -1, z: -0.000099897385}
-  - {x: -5.620306, y: -1, z: -0.000099897385}
+  - {x: 13.870307, y: -3.534439, z: -0.000099897385}
+  - {x: -5.620306, y: -3.534439, z: -0.000099897385}
   m_Textures0:
   - {x: -5.620306, y: 0}
   - {x: 0.4047649, y: 4.9623203}
@@ -6803,8 +6807,8 @@ MonoBehaviour:
   - {x: 7.845235, y: 4.9623203}
   - {x: 13.870306, y: 0}
   - {x: -5.620306, y: 0}
-  - {x: 13.870306, y: -1}
-  - {x: -5.620306, y: -1}
+  - {x: 13.870307, y: -3.534439}
+  - {x: -5.620306, y: -3.534439}
   m_Textures2: []
   m_Textures3: []
   m_Tangents:
@@ -6827,8 +6831,10 @@ MonoBehaviour:
   m_Mesh: {fileID: 200752696}
   m_IsSelectable: 1
   m_SelectedFaces: 
-  m_SelectedEdges: []
-  m_SelectedVertices: 
+  m_SelectedEdges:
+  - a: 6
+    b: 7
+  m_SelectedVertices: 0600000007000000
 --- !u!4 &430505860
 Transform:
   m_ObjectHideFlags: 0
@@ -17787,9 +17793,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 0.8}
   m_RaycastTarget: 1
+=======
+  m_Material: {fileID: 2100000, guid: 0af0f4be59d44be46834ded2726a89ad, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+>>>>>>> Stashed changes
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
