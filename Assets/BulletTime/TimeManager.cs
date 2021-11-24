@@ -16,6 +16,7 @@ public class TimeManager : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         audioManager = FindObjectOfType<AudioManager>();
         pauseMenu = FindObjectOfType<PauseMenu>();
+        canSlow = true;
     }
 
     private void Update()
@@ -26,10 +27,10 @@ public class TimeManager : MonoBehaviour
             Time.timeScale = Mathf.Clamp(Time.timeScale, 0f, 1f);
         }
         
-        if (Time.timeScale == 1)
+        /*if (Time.timeScale == 1)
         {
             canSlow = true;
-        }
+        }*/
 
         if (Input.GetMouseButtonDown(2))
         {
