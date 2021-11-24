@@ -8504,19 +8504,19 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Monte Lazzara - Lead Designer
+  m_Text: 'Monte Lazzara - Lead Designer/Art
 
-    Kevin Schoen - Lead Designer
-
-    Anthony
-    Gentile - Audio
-
-    Nolan Fortin - Programming
-
-    Shiaw-Rong Lin - Programming
+    Kevin Schoen - Level Designer
 
     Zephyrus
-    Mckinnon - Producer'
+    Mckinnon - Lead Producer
+
+    Nolan Fortin - Lead Programming
+
+    Shiaw-Rong
+    Lin - Programming
+
+    Anthony Gentile - Audio'
 --- !u!222 &682757514
 CanvasRenderer:
   m_ObjectHideFlags: 0
