@@ -8504,19 +8504,19 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Monte Lazzara - Lead Designer/Art
+  m_Text: 'Monte Lazzara - Art/Music
 
     Kevin Schoen - Level Designer
 
     Zephyrus
-    Mckinnon - Lead Producer
+    Mckinnon - Producer
 
-    Nolan Fortin - Lead Programming
+    Nolan Fortin - Programmer
 
-    Shiaw-Rong
-    Lin - Programming
+    Shiaw-Rong Lin - Programmer
 
-    Anthony Gentile - Audio'
+    Anthony
+    Gentile - SFX/Music'
 --- !u!222 &682757514
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22816,7 +22816,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 2
+      scalar: 3
       minScalar: 1
       maxCurve:
         serializedVersion: 2
