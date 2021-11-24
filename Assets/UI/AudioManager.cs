@@ -74,7 +74,10 @@ public class AudioManager : MonoBehaviour
 
         for (int i = 0; i < soundEffectsAudio.Length; i++)
         {
-            soundEffectsAudio[i].volume = soundEffectsFloat;
+            if (soundEffectsAudio[i] != null)
+            {
+                soundEffectsAudio[i].volume = soundEffectsFloat;
+            }
         }
     }
 
@@ -82,7 +85,10 @@ public class AudioManager : MonoBehaviour
     {
         for (int i = 0; i < soundEffectsAudio.Length; i++)
         {
-            soundEffectsAudio[i].volume = 0;
+            if (soundEffectsAudio[i] != null)
+            {
+                soundEffectsAudio[i].volume = 0;
+            }
         }
         backgroundAudio.volume = 0;
         StartCoroutine(pauseTime());
