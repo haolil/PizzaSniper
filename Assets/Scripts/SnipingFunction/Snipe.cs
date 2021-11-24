@@ -101,29 +101,22 @@ public class Snipe : MonoBehaviour
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
             RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
-            if (hit.collider != null && hit.collider.tag == "Enemy" || hit.collider.tag == "Window")
+            if (hit && hit.collider != null && hit.collider.tag == "Enemy")
             {
                 this.GetComponentInParent<Snipe>().aimCheck = true;
-                if (hit.collider.tag == "Enemy")
-                {
-                    Pineapple = hit.collider.gameObject.GetComponent<PineappleAI>();
-                }
-                else if (hit.collider.tag == "Window")
-                {
-                    windowBreak = hit.collider.gameObject.GetComponent<WindowBreak>();
-                }
+                Pineapple = hit.collider.gameObject.GetComponent<PineappleAI>();
+            }
+            else if (hit && hit.collider != null && hit.collider.tag == "Window")
+            {
+                this.GetComponentInParent<Snipe>().windowCheck = true;
+                windowBreak = hit.collider.gameObject.GetComponent<WindowBreak>();
             }
             else
             {
                 this.GetComponentInParent<Snipe>().aimCheck = false;
-                if (hit.collider.tag == "Enemy")
-                {
-                    Pineapple = null;
-                }
-                else if (hit.collider.tag == "Window")
-                {
-                    windowBreak = null;
-                }
+                this.GetComponentInParent<Snipe>().windowCheck = false;
+                Pineapple = null;
+                windowBreak = null;
             }
         }
     }
