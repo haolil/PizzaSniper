@@ -60,11 +60,10 @@ public class Snipe : MonoBehaviour
 
     public void shootFunction()
     {
-        
+        ShootGun();
         if (Input.GetMouseButtonDown(0) && currentBullet > 0 && canShoot)
         {
             BulletCount();
-            ShootGun();
             if (Time.timeScale > 0)
             {
                 if (windowBreak)
